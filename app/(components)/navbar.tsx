@@ -17,21 +17,22 @@ export const Navbar = () => {
       {/** TODO: mobile nav resizing*/}
       {/** desktop nav */}
       <div className="hidden md:flex md:flex-1 md:justify-end xl:justify-center items-center space-x-6">
-          <div className="flex items-center space-x-6 xl:space-x-15 flex-nowrap text-2xl">
+          <div className="flex items-center space-x-6 xl:space-x-10 flex-nowrap text-xl">
               <Link href="/" className="hidden xl:block">
                 <Image 
                     src="/images/logos/logo-white-transparent.c73fcbb6.png"
                     alt="CSERevue logo"
                     width = {150}
                     height = {50}
-                    className = "h-20 w-auto"
+                    className = "h-17 w-auto"
                     priority 
                 />
               </Link>
-              <Link href="/about-us" className="hover:text-[#2390c6]">About Us</Link>
-              <Link href= "/teams" className="hover:text-[#2390c6]">Teams</Link>
-              <Link href="/meet-the-team-contact-us" className="hover:text-[#2390c6]">Meet The Execs | Contact Us</Link>
-              <Link href="/sponsors" className="hover:text-[#2390c6] flex flex-row">Sponsors</Link>
+              <Link href="/about-us" className="hover:text-[#47bfb6]">About Us</Link>
+              <Link href="/events" className="hover:text-[#47bfb6]">Events</Link>
+              <Link href= "/teams" className="hover:text-[#47bfb6]">Teams</Link>
+              <Link href="/meet-the-team-contact-us" className="hover:text-[#47bfb6]">Meet The Execs | Contact Us</Link>
+              <Link href="/sponsors" className="hover:text-[#47bfb6] flex flex-row">Sponsors</Link>
           </div>
       </div>
     </div>
