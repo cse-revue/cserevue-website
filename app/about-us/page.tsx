@@ -1,53 +1,21 @@
-
-
-// import Link from "next/link";
-// import Image from "next/image";
-// import { motion, AnimatePresence } from "framer-motion";
-
-// export const Navbar = () => {
-//   return (
-//     <motion.nav
-//       className={`z-50 fixed top-0 w-full min-h-[60px] text-white transition-all duration-300`} 
-//       // ${isMobile ? (window.pageYOffset === 0 ? "bg-transparent" : "bg-[#011a38]") : scrolled ? "bg-[#011a38]" : "bg-transparent"}`}
-//       // animate={{ y: isMobile || visible ? 0 : "-100%" }} // Only hide on scroll for desktop
-//       transition={{ type: "tween", duration: 0.15, ease: "easeInOut" }}
-//     >
-//       <div className="hidden md:flex md:flex-1 md:justify-end xl:justify-center items-center space-x-6">
-//         <div className="flex items-center space-x-6 xl:space-x-12 flex-nowrap">
-//           <Link href="/about-us" className="hover:text-[#2390c6]">About Us</Link>
-//         </div>
-//       </div>
-        
-//     </motion.nav>
-//   )
-// }
-
-// import Image from "next/image";
-
 "use client";
 
 import React from "react";
-import { Navbar } from "./(components)/navbar";
+import { Navbar } from ".././(components)/navbar";
 
-export default function Home() {
+export default function About() {
   return (
     <div className="w-full bg-[#8A84E2] min-h-screen text-white">
       <Navbar />
-      <div>some distinctive opening</div>
-      <div>
-        some blurby thing + photo
-      </div>
-      <div>upcoming events</div>
-      <div>
-        {/** gallery of photos*/}
-        gallery
-      </div>
-      <div>that bar at the bottom with socials links</div>
+      this is about-us
     </div>
-    
-
   )
 }
+
+
+// import Image from "next/image";
+
+// export default function Home() {
 //   return (
 //     <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
 //       <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
