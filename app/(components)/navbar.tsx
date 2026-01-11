@@ -32,7 +32,8 @@ export const Navbar = () => {
               <Link href="/events" className="hover:text-[#47bfb6]">Events</Link>
               <Link href= "/teams" className="hover:text-[#47bfb6]">Teams</Link>
               <Link href="/meet-the-team-contact-us" className="hover:text-[#47bfb6]">Meet The Execs | Contact Us</Link>
-              <Link href="/sponsors" className="hover:text-[#47bfb6] flex flex-row">Sponsors</Link>
+              <Link href="/sponsors" className="hover:text-[#47bfb6]">Sponsors</Link>
+              <Link href="/history" className="hover:text-[#47bfb6] flex flex-row">History</Link>
           </div>
       </div>
     </div>
