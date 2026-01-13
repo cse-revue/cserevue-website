@@ -7,33 +7,75 @@ import { motion, AnimatePresence } from "framer-motion";
 export const Footer = () => {
   return (
     // <motion.nav
-    //   className={`z-50 fixed top-0 w-full min-h-[60px] text-white transition-all duration-300`} 
-    //   // ${isMobile ? (window.pageYOffset === 0 ? "bg-transparent" : "bg-[#011a38]") : scrolled ? "bg-[#011a38]" : "bg-transparent"}`}
-    //   // animate={{ y: isMobile || visible ? 0 : "-100%" }} // Only hide on scroll for desktop
-    //   transition={{ type: "tween", duration: 0.15, ease: "easeInOut" }}
-    // >
     //  TODO: motion
-    <div className="flex items-center justify-between px-10 py-6 xl:px-48 md:px-10 min-h-7">
-      {/** TODO: mobile nav resizing*/}
-      {/** desktop nav */}
-      <div className="hidden md:flex md:flex-1 md:justify-end xl:justify-center items-center space-x-6">
-          <div className="flex items-center space-x-6 xl:space-x-10 flex-nowrap text-xl">
-              <Link href="/" className="hidden xl:block">
-                <Image 
-                    src="/images/logos/logo-white-transparent.c73fcbb6.png"
-                    alt="CSERevue logo"
-                    width = {150}
-                    height = {50}
-                    className = "h-17 w-auto"
-                    priority 
-                />
-              </Link>
-              <Link href="/about-us" className="hover:text-[#47bfb6]">About Us</Link>
-              <Link href="/events" className="hover:text-[#47bfb6]">Events</Link>
-              <Link href= "/teams" className="hover:text-[#47bfb6]">Teams</Link>
-              <Link href="/meet-the-team-contact-us" className="hover:text-[#47bfb6]">Meet The Execs | Contact Us</Link>
-              <Link href="/sponsors" className="hover:text-[#47bfb6] flex flex-row">Sponsors</Link>
+    <div className="absolute bottom-5 xl:left-40 left-5 xl:right-40 right-5">
+      <div className="flex flex-row">
+      {/* // <div className="flex flex-row place-content-between"> */}
+        {/** TODO: mobile nav resizing*/}
+        {/** desktop nav */}
+        <div className="text-xl/15 font-bold mr-auto">
+          <div> Follow us </div>
+          <div className="flex items-center justify-between space-x-6 xl:space-x-6">
+            <Link href="https://www.instagram.com/cserevue?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className="hidden xl:block">
+              <Image 
+                src="/images/logos/instagram-logo-bw.png"
+                alt="instagram logo"
+                width = {150}
+                height = {50}
+                className = "h-6 w-auto"
+                priority 
+              />
+            </Link>
+            <Link href="/" className="hidden xl:block">
+              <Image 
+                src="/images/logos/discord-logo-bw.png"
+                alt="discord logo"
+                width = {150}
+                height = {50}
+                className = "h-6 w-auto"
+                priority 
+              />
+            </Link>
+            <Link href="https://www.facebook.com/cserevue/" className="hidden xl:block">
+              <Image 
+                src="/images/logos/facebook-logo-bw.png"
+                alt="facebook logo"
+                width = {150}
+                height = {50}
+                className = "h-6 w-auto"
+                priority 
+              />
+            </Link>
+            <Link href="https://www.youtube.com/c/cserevue" className="hidden xl:block">
+              <Image 
+                src="/images/logos/youtube-logo-bw.png"
+                alt="youtube logo"
+                width = {150}
+                height = {50}
+                className = "h-6 w-auto"
+                priority 
+              />
+            </Link>
+            <Link href="https://linktr.ee/cserevue" className="hidden xl:block">
+              <Image 
+                src="/images/logos/instagram-logo-bw.png"
+                alt="linktree logo"
+                width = {150}
+                height = {50}
+                className = "h-6 w-auto"
+                priority 
+              />
+            </Link>
           </div>
+        </div>
+        <div className="ml-auto">
+          <img 
+            src="images/logos/logo-white-transparent-no-text.png"
+            alt="CSERevue logo no-text"
+            className = "h-20 w-auto"
+          />
+          <div className="ml-auto text-xs/8">© CSE Revue 2026</div>
+        </div>
       </div>
     </div>
     
