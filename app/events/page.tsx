@@ -3,6 +3,7 @@
 import React from "react";
 import { Navbar } from ".././(components)/navbar";
 import Header from "../(components)/header";
+import { Footer } from "../(components)/footer";
 
 export default function Events() {
   return (
@@ -17,6 +18,7 @@ export default function Events() {
         image="/images/teams/vocals.d6a5c5d0.jpg"
       />
       this is events
+      <Footer />
     </div>
   )
 }

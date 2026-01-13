@@ -3,6 +3,7 @@
 import React from "react";
 import { Navbar } from ".././(components)/navbar";
 import Header from ".././(components)/header"
+import { Footer } from "../(components)/footer";
 
 interface teamInfo {
   teamName: string,
@@ -25,6 +26,7 @@ const Teams = () => {
       />
       this is teams
       <div>use like teams.map to create team cards that can expand</div>
+      <Footer />
     </div>
 
   )

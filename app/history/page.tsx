@@ -3,6 +3,7 @@
 import React from "react";
 import { Navbar } from ".././(components)/navbar";
 import Header from "../(components)/header";
+import { Footer } from "../(components)/footer";
 
 export default function History() {
   return (
@@ -18,6 +19,7 @@ export default function History() {
       />
       this is history
       <div>potentially like a timeline kinda thing?</div>
+      <Footer />
     </div>
   )
 }

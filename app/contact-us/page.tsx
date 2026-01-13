@@ -1,8 +1,9 @@
 "use client";
 
 import React from "react";
-import { Navbar } from ".././(components)/navbar";
+import { Navbar } from "../(components)/navbar";
 import Header from "../(components)/header";
+import { Footer } from "../(components)/footer";
 
 export default function ContactUs() {
   return (
@@ -16,6 +17,7 @@ export default function ContactUs() {
         title="Contact Us"
       />
       this is meet the team/contact us
+      <Footer />
     </div>
   )
 }
