@@ -37,7 +37,8 @@ export default function Home() {
         bg-gradient-to-b
         from-black from-20% 
         via-[#381E72] via-[percentage:20%_90%] 
-        to-[#000000] to-100%">
+        to-[#000000] to-100%
+        px-40 py-8">
       <Navbar />
       <div>some distinctive opening</div>
       <div>
