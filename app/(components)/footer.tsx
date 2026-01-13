@@ -18,7 +18,7 @@ export const Footer = () => {
       {/** TODO: mobile nav resizing*/}
       {/** desktop nav */}
       <div> Follow us </div>
-      <div className="flex justify-start">
+      <div className="mr-auto">
         <div className="flex items-center space-x-6 xl:space-x-10 flex-nowrap">
           <Link href="/" className="hidden xl:block">
             <Image 
@@ -71,12 +71,12 @@ export const Footer = () => {
             />
           </Link>
         </div>
-        <img 
-          src="images/logos/logo-white-transparent-no-text.png"
-          alt="CSERevue logo no-text"
-          className = "h-10 w-auto ml-auto w-{150} h-{50}"
-        />
       </div>
+      <img 
+        src="images/logos/logo-white-transparent-no-text.png"
+        alt="CSERevue logo no-text"
+        className = "h-10 w-auto ml-auto w-{150} h-{50}"
+      />
     </div>
     
     // </motion.nav>
