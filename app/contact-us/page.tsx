@@ -1,11 +1,11 @@
 "use client";
 
 import React from "react";
-import { Navbar } from ".././(components)/navbar";
+import { Navbar } from "../(components)/navbar";
 import Header from "../(components)/header";
 import { Footer } from "../(components)/footer";
 
-export default function Sponsors() {
+export default function ContactUs() {
   return (
     <div className="w-full min-h-screen text-white
         bg-linear-to-b
@@ -14,10 +14,9 @@ export default function Sponsors() {
         to-[#000000] to-100%">
       <Navbar />
       <Header
-        title="Woah Sponsors"
-        image="/images/teams/webmin.fd05e87d.jpg"
+        title="Contact Us"
       />
-      this is sponsors
+      this is meet the team/contact us
       <Footer />
     </div>
   )

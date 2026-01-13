@@ -2,6 +2,8 @@
 
 import React from "react";
 import { Navbar } from ".././(components)/navbar";
+import Header from ".././(components)/header"
+import { Footer } from "../(components)/footer";
 
 interface teamInfo {
   teamName: string,
@@ -12,10 +14,19 @@ interface teamInfo {
 
 const Teams = () => {
   return (
-    <div className="w-full bg-[#8A84E2] min-h-screen text-white">
+    <div className="w-full min-h-screen text-white
+        bg-linear-to-b
+        from-black from-20% 
+        via-[#381E72] via-[percentage:20%_90%] 
+        to-[#000000] to-100%">
       <Navbar />
+      <Header
+        title="Discover Our Teams"
+        image="/images/teams/tech.63e0c237.jpg"
+      />
       this is teams
       <div>use like teams.map to create team cards that can expand</div>
+      <Footer />
     </div>
 
   )
