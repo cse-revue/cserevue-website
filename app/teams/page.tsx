@@ -44,6 +44,10 @@ const teams: teamInfo[] = [
     image: "",
     desc: ""
   }, {
+    teamName: "Marketing",
+    image: "",
+    desc: ""
+  }, {
     teamName: "Socials",
     image: "",
     desc: ""

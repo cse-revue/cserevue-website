@@ -28,10 +28,16 @@
 
 import React from "react";
 import { Navbar } from "./(components)/navbar";
+import { Footer } from "./(components)/footer";
 
 export default function Home() {
   return (
-    <div className="w-full bg-[#8A84E2] min-h-screen text-white">
+    // <div className="w-full bg-[#8A84E2] min-h-screen text-white">
+    <div className="w-full min-h-screen text-white
+        bg-gradient-to-b
+        from-black from-20% 
+        via-[#381E72] via-[percentage:20%_90%] 
+        to-[#000000] to-100%">
       <Navbar />
       <div>some distinctive opening</div>
       <div>
@@ -42,7 +48,8 @@ export default function Home() {
         {/** gallery of photos*/}
         gallery
       </div>
-      <div>that bar at the bottom with socials links</div>
+      {/* <div>that bar at the bottom with socials links</div> */}
+      <Footer />
     </div>
     
 
