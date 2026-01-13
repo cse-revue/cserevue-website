@@ -13,7 +13,7 @@ export const Navbar = () => {
     //   transition={{ type: "tween", duration: 0.15, ease: "easeInOut" }}
     // >
     //  TODO: motion
-    <div className="flex items-center justify-between px-10 py-6 xl:px-48 md:px-10 min-h-7">
+    <div className="flex items-center justify-between xl:px-48 md:px-10 min-h-7">
       {/** TODO: mobile nav resizing*/}
       {/** desktop nav */}
       <div className="hidden md:flex md:flex-1 md:justify-end xl:justify-center items-center space-x-6">
