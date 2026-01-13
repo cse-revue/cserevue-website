@@ -13,27 +13,69 @@ export const Footer = () => {
     //   transition={{ type: "tween", duration: 0.15, ease: "easeInOut" }}
     // >
     //  TODO: motion
-    <div className="flex items-center justify-between px-10 py-6 xl:px-48 md:px-10 min-h-7">
+    <div className="flex items-center justify-between px-10 py-6 xl:px-48 md:px-10 min-h-7 text-xl">
+    {/* <div className="flex justify-start"> */}
       {/** TODO: mobile nav resizing*/}
       {/** desktop nav */}
-      <div className="hidden md:flex md:flex-1 md:justify-end xl:justify-center items-center space-x-6">
-          <div className="flex items-center space-x-6 xl:space-x-10 flex-nowrap text-xl">
-              <Link href="/" className="hidden xl:block">
-                <Image 
-                    src="/images/logos/logo-white-transparent.c73fcbb6.png"
-                    alt="CSERevue logo"
-                    width = {150}
-                    height = {50}
-                    className = "h-17 w-auto"
-                    priority 
-                />
-              </Link>
-              <Link href="/about-us" className="hover:text-[#47bfb6]">About Us</Link>
-              <Link href="/events" className="hover:text-[#47bfb6]">Events</Link>
-              <Link href= "/teams" className="hover:text-[#47bfb6]">Teams</Link>
-              <Link href="/meet-the-team-contact-us" className="hover:text-[#47bfb6]">Meet The Execs | Contact Us</Link>
-              <Link href="/sponsors" className="hover:text-[#47bfb6] flex flex-row">Sponsors</Link>
-          </div>
+      <div> Follow us </div>
+      <div className="flex justify-start">
+        <div className="flex items-center space-x-6 xl:space-x-10 flex-nowrap">
+          <Link href="/" className="hidden xl:block">
+            <Image 
+              src="/images/logos/discord-logo-bw.png"
+              alt="discord logo"
+              width = {150}
+              height = {50}
+              className = "h-6 w-auto"
+              priority 
+            />
+          </Link>
+          <Link href="https://www.instagram.com/cserevue?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className="hidden xl:block">
+            <Image 
+              src="/images/logos/instagram-logo-bw.png"
+              alt="instagram logo"
+              width = {150}
+              height = {50}
+              className = "h-6 w-auto"
+              priority 
+            />
+          </Link>
+          <Link href="https://www.facebook.com/cserevue/" className="hidden xl:block">
+            <Image 
+              src="/images/logos/facebook-logo-bw.png"
+              alt="facebook logo"
+              width = {150}
+              height = {50}
+              className = "h-6 w-auto"
+              priority 
+            />
+          </Link>
+          <Link href="https://www.youtube.com/c/cserevue" className="hidden xl:block">
+            <Image 
+              src="/images/logos/youtube-logo-bw.png"
+              alt="youtube logo"
+              width = {150}
+              height = {50}
+              className = "h-6 w-auto"
+              priority 
+            />
+          </Link>
+          <Link href="https://linktr.ee/cserevue" className="hidden xl:block">
+            <Image 
+              src="/images/logos/instagram-logo-bw.png"
+              alt="linktree logo"
+              width = {150}
+              height = {50}
+              className = "h-6 w-auto"
+              priority 
+            />
+          </Link>
+        </div>
+        <img 
+          src="images/logos/logo-white-transparent-no-text.png"
+          alt="CSERevue logo no-text"
+          className = "h-10 w-auto ml-auto w-{150} h-{50}"
+        />
       </div>
     </div>
     
