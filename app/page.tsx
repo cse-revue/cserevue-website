@@ -38,19 +38,22 @@ export default function Home() {
         from-black from-20% 
         via-[#381E72] via-[percentage:20%_90%] 
         to-[#000000] to-100%
-        px-40 py-8">
+        ">
       <Navbar />
-      <div>some distinctive opening</div>
-      <div>
-        some blurby thing + photo
+      <div className="px-40">
+        
+        <div>some distinctive opening</div>
+        <div>
+          some blurby thing + photo
+        </div>
+        <div>upcoming events</div>
+        <div>
+          {/** gallery of photos*/}
+          gallery
+        </div>
+        {/* <div>that bar at the bottom with socials links</div> */}
+        <Footer />
       </div>
-      <div>upcoming events</div>
-      <div>
-        {/** gallery of photos*/}
-        gallery
-      </div>
-      {/* <div>that bar at the bottom with socials links</div> */}
-      <Footer />
     </div>
     
 
