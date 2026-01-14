@@ -35,7 +35,7 @@ export default function Home() {
     // <div className="w-full bg-[#8A84E2] min-h-screen text-white">
     <div className="[background-image:linear-gradient(to_bottom,_#dddddd00_0%,_#000000_90%),_linear-gradient(to_top,_#7840FF_40%,_#000000_93%)] min-h-screen w-full text-white">
         <Navbar />
-        <div className="px-40">
+        <div className="px-40 py-10">
           <div>some distinctive opening</div>
           <div>
             some blurby thing + photo
@@ -45,6 +45,11 @@ export default function Home() {
             {/** gallery of photos*/}
             gallery
           </div>
+          <img 
+            src="images/logos/logo-white-transparent-no-text.png"
+            alt="CSERevue logo no-text"
+            className = "h-400 w-500"
+          />
           {/* <div>that bar at the bottom with socials links</div> */}
           <Footer />
       </div>
