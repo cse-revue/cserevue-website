@@ -33,26 +33,20 @@ import { Footer } from "./(components)/footer";
 export default function Home() {
   return (
     // <div className="w-full bg-[#8A84E2] min-h-screen text-white">
-    <div className="w-full min-h-screen text-white
-        bg-gradient-to-b
-        from-black from-20% 
-        via-[#381E72] via-[percentage:20%_90%] 
-        to-[#000000] to-100%
-        ">
-      <Navbar />
-      <div className="px-40">
-        
-        <div>some distinctive opening</div>
-        <div>
-          some blurby thing + photo
-        </div>
-        <div>upcoming events</div>
-        <div>
-          {/** gallery of photos*/}
-          gallery
-        </div>
-        {/* <div>that bar at the bottom with socials links</div> */}
-        <Footer />
+    <div className="[background-image:linear-gradient(to_bottom,_#dddddd00_0%,_#000000_90%),_linear-gradient(to_top,_#7840FF_40%,_#000000_93%)] min-h-screen w-full text-white">
+        <Navbar />
+        <div className="px-40">
+          <div>some distinctive opening</div>
+          <div>
+            some blurby thing + photo
+          </div>
+          <div>upcoming events</div>
+          <div>
+            {/** gallery of photos*/}
+            gallery
+          </div>
+          {/* <div>that bar at the bottom with socials links</div> */}
+          <Footer />
       </div>
     </div>
     

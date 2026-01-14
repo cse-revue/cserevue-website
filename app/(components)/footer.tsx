@@ -68,7 +68,7 @@ export const Footer = () => {
             </Link>
           </div>
         </div>
-        <div className="ml-auto">
+        <div>
           <img 
             src="images/logos/logo-white-transparent-no-text.png"
             alt="CSERevue logo no-text"
