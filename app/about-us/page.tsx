@@ -4,6 +4,13 @@ import React from "react";
 import { Navbar } from ".././(components)/navbar";
 import Header from ".././(components)/header"
 import { Footer } from "../(components)/footer";
+import Link from "next/link";
+
+interface execMember {
+  name: string,
+  photo: string,
+  position: string,
+}
 
 export default function About() {
   return (
@@ -17,11 +24,95 @@ export default function About() {
         title="ABOUT US"
         image="/images/teams/cast.b91cf1d8.jpg"
       />
-      this is about-us
+      
+      {/**description */}
+      <div className="flex w-full bg-white text-black justify-center">
+        <p className="text-black max-w-150 text-center my-20 mx-10">
+          <span className="text-[#E83151] text-3xl">CSE Revue </span>
+          is a group of people and we do theatre and i cannot fluff for this long so lorem ipsum yeahhhhhh potatoes tomatoes egg and soup let us go then you and i.
+I think this blurb is meant to be longer than the other blurb so uh in the room the women come and go talking of michaelangelo do i dare disturb the universe do i dare to eat a peach i shall wear the bottoms of my trousers rolled
+        </p>
+      </div>
+
+      {/**past shows */}
+      <div className="bg-black justify-center flex">
+        <div className="text-white py-8">
+          <p className="text-3xl font-bold text-center">
+            PAST SHOWS
+          </p>
+          {/** both past shows */}
+          <div className="grid md:grid-cols-2 grid-cols-1 gap-15 xl:px-20 px-10 py-8">
+            {/**2025 show */}
+            <div className="w-full overflow-hidden"> 
+              <img
+                src="/images/teams/cast.b91cf1d8.jpg"
+              />
+              <p className="text-center text-md py-4">
+                2025: ScriptBoB SquareBrackets
+              </p>
+            </div>
+            {/**2024 show */}
+            <div className="w-full overflow-hidden">
+              <img
+                src="/images/teams/cast.b91cf1d8.jpg"
+              />
+              <p className="text-center text-md py-4">
+                2024: Mean GURLs
+              </p>
+            </div>
+          </div>
+          <Link href="/history" className="xl:px-20 px-10 text-[#F49D37] hover:underline"> view full history →</Link>
+        </div>
+      </div>
+
+      {/** meet the team */}
+      <div className="bg-white text-black">
+        execTeam.map
+      </div>
       <Footer />
     </div>
   )
 }
+
+const execTeam: execMember[] = [
+  {
+    name: "Jade Williams",
+    photo: "",
+    position: "Director"
+  }, {
+    name: "Brett Viado",
+    photo: "",
+    position: "Director"
+  }, {
+    name: "Chelcy Meneses", 
+    photo: "",
+    position: "Director"
+  }, {
+    name: "Elaine Huang",
+    photo: "",
+    position: "Producer/President"
+  }, {
+    name: "Jolan Guo",
+    photo: "",
+    position: "Producer"
+  }, {
+    name: "Jasmine Ho",
+    photo: "",
+    position: "Producer",
+  }, {
+    name: "Sarah Romanous",
+    photo: "",
+    position: "Secretary"
+  }, {
+    name: "Arte Collins",
+    photo: "",
+    position: "Arc Delegate/Welfare Officer"
+  }, {
+    name: "Samuel Vaynman",
+    photo: "",
+    position: "Treasurer"
+  }
+]
 
 
 // import Image from "next/image";
