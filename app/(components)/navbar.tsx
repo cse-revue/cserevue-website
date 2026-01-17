@@ -3,8 +3,18 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
+import React, {useState, useEffect} from 'react';
 
 export const Navbar = () => {
+  const [scroll, setScroll] = useState(0);
+  useEffect(() => {
+    const handleScroll = () => {
+      setScroll(window.scrollY);
+    }
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  },[]);
+
   return (
     // <motion.nav
     //   className={`z-50 fixed top-0 w-full min-h-[60px] text-white transition-all duration-300`} 
@@ -13,12 +23,12 @@ export const Navbar = () => {
     //   transition={{ type: "tween", duration: 0.15, ease: "easeInOut" }}
     // >
     //  TODO: motion
-    <div className="sticky top-0 flex items-center justify-between relative z-10 shadow-lg rounded-md bg-black/50 backdrop-blur-md py-3 px-10 xl:px-48 md:px-10 min-h-7">
+    <div className={`sticky top-0 flex items-center justify-between relative z-10 shadow-lg rounded-md bg-[#5603AD] backdrop-blur-md py-2 px-10 xl:px-48 md:px-10 min-h-7 ${scroll == 0 ? "opacity-100" : "opacity-70"} transition-all`}>
       {/** TODO: mobile nav resizing*/}
       {/** desktop nav */}
-      <div className="hidden md:flex md:flex-1 md:justify-end xl:justify-center items-center space-x-6">
-        <div className="flex items-center space-x-6 xl:space-x-12 flex-nowrap text-xl">
-          <Link href="/" className="hidden xl:block">
+      <div className="hidden md:flex md:flex-1 xl:justify-center items-center space-x-6">
+        <div className="flex items-center space-x-6 xl:space-x-12 md: space-x-6 flex-nowrap text-xl">
+          <Link href="/" className="hidden md:block">
             <Image 
               src="/images/logos/logo-white-transparent.c73fcbb6.png"
               alt="CSERevue logo"

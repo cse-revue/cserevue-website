@@ -8,8 +8,8 @@ export const Footer = () => {
   return (
     // <motion.nav
     //  TODO: motion
-    <div className="bottom-50 xl:left-40 left-5 xl:right-40 right-5">
-      <div className="flex flex-row bottom-50">
+    <div className="bottom-50 xl:left-40 left-5 xl:right-40 right-5 bg-[#5603AD]">
+      <div className="flex flex-row bottom-50 mx-10">
       {/* // <div className="flex flex-row place-content-between"> */}
         {/** TODO: mobile nav resizing*/}
         {/** desktop nav */}
@@ -68,7 +68,7 @@ export const Footer = () => {
             </Link>
           </div>
         </div>
-        <div>
+        <div className="pt-2">
           <img 
             src="images/logos/logo-white-transparent-no-text.png"
             alt="CSERevue logo no-text"

@@ -31,13 +31,18 @@ import { Navbar } from "./(components)/navbar";
 import { Footer } from "./(components)/footer";
 
 export default function Home() {
+  // const maxVidHeight = 'calc(100vh-50px)'
   return (
     // <div className="w-full bg-[#8A84E2] min-h-screen text-white">
     <div className="[background-image:linear-gradient(to_bottom,_#dddddd00_0%,_#000000_90%),_linear-gradient(to_top,_#7840FF_40%,_#000000_93%)] min-h-screen w-full text-white">
+        {/* <video 
+          src="/promo.512e2c26.mp4"
+          className="autoplay playsinline w-full overflow-y-hidden "
+        /> */}
         <Navbar />
         <div className="px-40 py-10">
           <div>some distinctive opening</div>
-          <div>
+          <div> 
             some blurby thing + photo
           </div>
           <div>upcoming events</div>
