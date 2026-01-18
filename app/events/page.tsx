@@ -32,11 +32,11 @@ const CountdownTile: React.FC<{digit: string}> = ({digit}) => {
   )
 }
 
-const EventRows: React.FC<{event: EventDetails, index: number}> = ({event, index}) => {
+const EventRows: React.FC<{event: EventDetails, index: number, maxEvents: number}> = ({event, index, maxEvents}) => {
   const link: string = event.link? event.link : "https://www.facebook.com/cserevue/";
   
   return (
-    <div className="border-t border-black">
+    <div className={`border-t border-black ${index === maxEvents - 1 ? "border-b":""}`}>
       <div className="mt-2 mb-2 flex flex-col md:flex-row gap-4">
         <div className={`flex flex-row md:flex-col md:basis-2/10 ${index % 2 === 0? "bg-[#46C0B7]" : "bg-[#1B512D]"} text-center justify-center`}>
           <p className=" text-white font-bold font-lg my-2 md:my-0">
@@ -50,7 +50,7 @@ const EventRows: React.FC<{event: EventDetails, index: number}> = ({event, index
           <Link href={link} className="font-bold text-xl hover:underline">{event.eventName}</Link>
           <p className="">{event.desc}</p>
         </div>
-        <div className={`flex flex-col md:basis-3/10 basis-1/5 text-[#5603AD] md:text-center justify-center`}>
+        <div className={`flex flex-col md:basis-3/10 basis-1/5 text-[#5603AD] justify-center`}>
           <p className="">
             <span className="font-bold">time: </span> {event.time}
           </p>
@@ -104,9 +104,13 @@ const Events: React.FC = () => {
         <h1 className="text-[#E83151] font-bold text-3xl text-center mt-6">UPCOMING EVENTS</h1>
         <div className="md:px-20 px-10 mt-6">
           {events.map((event, index) => (
-            <EventRows key={index} event={event} index={index}/>
+            <EventRows key={index} event={event} index={index} maxEvents={events.length}/>
           ))}
         </div>
+        <Link
+          href="https://www.instagram.com/cserevue?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+          className=" hover:underline md:px-20 px-10 text-xl text-[#F49D37] font-bold"
+        >Keep up to date on Discord! → REPLACE WITH DISCORD LINK</Link>
       </div>
       <Footer />
     </div>
