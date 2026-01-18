@@ -31,22 +31,6 @@ const TeamMemberCard: React.FC<{member: Member, index: number}> = ({ member, ind
       <h2 className={`text-center ${index % 2 === 0 ? 'text-[#5603AD]' : 'text-[#47BFB6]'} font-semibold mt-3`}>{member.name}</h2>
       <p>{member.position}</p>
     </div>
-    // <Card className="w-[100px]">
-    //   <CardContent className="flex flex-col items-center">
-    //     <div className="w-32 h-32 relative">
-    //       <img
-    //         src={imageURL}
-    //         alt={member.name}
-    //         width={128}
-    //         height={128}
-    //         className="w-32 h-32 object-cover rounded-full"
-    //         onError={() => setImageURL("/images/teams/choreos.5b919d8d.jpg")}
-    //       />
-    //     </div>
-    //     <h2 className="text-lg font-semibold mt-4">{member.name}</h2>
-    //     <p className="text-sm text-black">{member.position}</p>
-    //   </CardContent>
-    // </Card>
   )
 }
 
