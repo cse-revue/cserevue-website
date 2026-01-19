@@ -26,7 +26,7 @@ const TeamMemberCard: React.FC<{member: Member, index: number}> = ({ member, ind
         height={180}
         unoptimized
         onError={() => setImageURL("/images/teams/choreos.5b919d8d.jpg")}
-        className="rounded-full object-cover"
+        className="rounded-full object-cover size-70"
       />
       <h2 className={`text-center ${index % 2 === 0 ? 'text-[#5603AD]' : 'text-[#47BFB6]'} font-semibold mt-3`}>{member.name}</h2>
       <p>{member.position}</p>
@@ -58,8 +58,8 @@ I think this blurb is meant to be longer than the other blurb so uh in the room 
 
       {/**past shows */}
       <div className="bg-black justify-center flex">
-        <div className="text-white py-8">
-          <p className="text-3xl font-bold text-center">
+        <div className="text-white pt-15 pb-8">
+          <p className="text-3xl font-bold text-center pb-3">
             PAST SHOWS
           </p>
           {/** both past shows */}
@@ -89,8 +89,8 @@ I think this blurb is meant to be longer than the other blurb so uh in the room 
 
       {/** meet the team */}
       <div className="bg-white justify-center flex">
-        <div className="text-black py-8">
-          <p className="text-3xl font-bold text-center">
+        <div className="text-black pb-15 pt-20">
+          <p className="text-3xl font-bold text-center pb-5 text-[#E83151]">
             MEET THE EXECS
           </p>
       
