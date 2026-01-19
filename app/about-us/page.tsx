@@ -18,7 +18,7 @@ const TeamMemberCard: React.FC<{member: Member, index: number}> = ({ member, ind
 
   const [imageURL, setImageURL] = useState(member.photo);
   return (
-    <div className="w-full overflow-hidden items-center flex flex-col">
+    <div className="w-full overflow-hidden items-center flex flex-col shrink-0">
       <Image
         src={imageURL}
         alt={member.name}
@@ -26,17 +26,18 @@ const TeamMemberCard: React.FC<{member: Member, index: number}> = ({ member, ind
         height={180}
         unoptimized
         onError={() => setImageURL("/images/teams/choreos.5b919d8d.jpg")}
-        className="rounded-full object-cover size-70"
+        className="rounded-full object-cover size-60"
       />
-      <h2 className={`text-center ${index % 2 === 0 ? 'text-purple' : 'text-cyan'} font-semibold mt-3`}>{member.name}</h2>
-      <p>{member.position}</p>
+      {/*was size-50 - change if you hate it like this*/}
+      <h2 className={`text-center ${index % 2 === 0 ? 'text-purple' : 'text-cyan'} font-rowdies uppercase mt-3 text-xl`}>{member.name}</h2>
+      <p className={`font-paragraph text-xl`}>{member.position}</p>
     </div>
   )
 }
 
 const About: React.FC = () => {
   return (
-    <div className="w-full min-h-screen text-white
+    <div className="w-full min-h-screen text-white font-rowdie
         bg-gradient-to-b
         from-black from-20% 
         via-[#381E72] via-[percentage:20%_90%] 
@@ -49,8 +50,8 @@ const About: React.FC = () => {
       
       {/**description */}
       <div className="flex w-full bg-white text-black justify-center">
-        <p className="text-black max-w-150 text-center my-20 mx-10">
-          <span className="text-pink text-3xl">CSE Revue </span>
+        <p className="text-black font-paragraph max-w-190 text-center my-20 mx-10 leading-8 text-xl">
+          <span className="text-pink text-4xl font-rowdies">CSE REVUE </span>
           is a group of people and we do theatre and i cannot fluff for this long so lorem ipsum yeahhhhhh potatoes tomatoes egg and soup let us go then you and i.
 I think this blurb is meant to be longer than the other blurb so uh in the room the women come and go talking of michaelangelo do i dare disturb the universe do i dare to eat a peach i shall wear the bottoms of my trousers rolled
         </p>
@@ -59,7 +60,7 @@ I think this blurb is meant to be longer than the other blurb so uh in the room 
       {/**past shows */}
       <div className="bg-black justify-center flex">
         <div className="text-white pt-15 pb-8">
-          <p className="text-3xl font-bold text-center pb-3">
+          <p className="text-3xl font-rowdies text-center pb-3">
             PAST SHOWS
           </p>
           {/** both past shows */}
@@ -90,7 +91,7 @@ I think this blurb is meant to be longer than the other blurb so uh in the room 
       {/** meet the team */}
       <div className="bg-white justify-center flex">
         <div className="text-black pb-15 pt-20">
-          <p className="text-3xl font-bold text-center pb-5 text-pink">
+          <p className="text-3xl font-rowdies text-center pb-5 text-pink">
             MEET THE EXECS
           </p>
       

@@ -1,5 +1,5 @@
-@import url("https://fonts.google.com/specimen/BioRhyme");
-@import url("https://fonts.google.com/specimen/Rowdies");
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rowdies&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -7,8 +7,11 @@
   --foreground: #171717;
   --pink: #E83151;
   --purple: #5603AD;
+  --l_purple: #7D00FF;
   --cyan: #47BFB6;
+  --d_cyan: #3AA299;
   --orange: #F49D37;
+  --forest: #1B512D;
 }
 
 @theme inline {
@@ -16,12 +19,35 @@
   --color-foreground: var(--foreground);
   --color-pink: var(--pink);
   --color-purple: var(--purple);
+  --color-l_purple: var(--l_purple);
   --color-cyan: var(--cyan);
+  --color-d_cyan: var(--d_cyan);
   --color-orange: var(--orange);
+  --color-forest: var(--forest);
 
-  --font-paragraph: "BioRhyme";
-  --font-header: "Rowdies";
+  --font-paragraph: "BioRhyme", serif;
+  --font-rowdies: "Rowdies", sans-serif;
 }
+
+/* 
+.rowdies-light {
+  font-family: "Rowdies", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.rowdies-regular {
+  font-family: "Rowdies", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rowdies-bold {
+  font-family: "Rowdies", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+} */
+
 
 /* 
 @media (prefers-color-scheme: dark) {

@@ -23,11 +23,11 @@ export const Navbar = () => {
     //   transition={{ type: "tween", duration: 0.15, ease: "easeInOut" }}
     // >
     //  TODO: motion
-    <div className={`sticky top-0 flex items-center justify-between relative z-10 shadow-lg rounded-md bg-[#5603AD] backdrop-blur-md py-2 px-10 xl:px-48 md:px-10 min-h-7 ${scroll == 0 ? "opacity-100" : "opacity-70"} transition-all`}>
+    <div className={`sticky top-0 flex items-center justify-between relative z-10 shadow-lg rounded-md bg-purple backdrop-blur-md py-2 px-10 xl:px-48 md:px-10 min-h-7 ${scroll == 0 ? "opacity-100" : "opacity-70"} transition-all`}>
       {/** TODO: mobile nav resizing*/}
       {/** desktop nav */}
       <div className="hidden md:flex md:flex-1 xl:justify-center items-center space-x-6">
-        <div className="flex items-center space-x-6 xl:space-x-12 md: space-x-6 flex-nowrap text-xl">
+        <div className="flex items-center space-x-6 xl:space-x-12 md: space-x-6 flex-nowrap text-xl font-paragraph">
           <Link href="/" className="hidden md:block">
             <Image 
               src="/images/logos/logo-white-transparent.c73fcbb6.png"
