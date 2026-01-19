@@ -28,7 +28,7 @@ const TeamMemberCard: React.FC<{member: Member, index: number}> = ({ member, ind
         onError={() => setImageURL("/images/teams/choreos.5b919d8d.jpg")}
         className="rounded-full object-cover size-70"
       />
-      <h2 className={`text-center ${index % 2 === 0 ? 'text-[#5603AD]' : 'text-[#47BFB6]'} font-semibold mt-3`}>{member.name}</h2>
+      <h2 className={`text-center ${index % 2 === 0 ? 'text-purple' : 'text-cyan'} font-semibold mt-3`}>{member.name}</h2>
       <p>{member.position}</p>
     </div>
   )
@@ -50,7 +50,7 @@ const About: React.FC = () => {
       {/**description */}
       <div className="flex w-full bg-white text-black justify-center">
         <p className="text-black max-w-150 text-center my-20 mx-10">
-          <span className="text-[#E83151] text-3xl">CSE Revue </span>
+          <span className="text-pink text-3xl">CSE Revue </span>
           is a group of people and we do theatre and i cannot fluff for this long so lorem ipsum yeahhhhhh potatoes tomatoes egg and soup let us go then you and i.
 I think this blurb is meant to be longer than the other blurb so uh in the room the women come and go talking of michaelangelo do i dare disturb the universe do i dare to eat a peach i shall wear the bottoms of my trousers rolled
         </p>
@@ -83,14 +83,14 @@ I think this blurb is meant to be longer than the other blurb so uh in the room 
               </p>
             </div>
           </div>
-          <Link href="/history" className="xl:px-20 px-10 text-[#F49D37] hover:underline"> view full history →</Link>
+          <Link href="/history" className="xl:px-20 px-10 text-orange hover:underline"> view full history →</Link>
         </div>
       </div>
 
       {/** meet the team */}
       <div className="bg-white justify-center flex">
         <div className="text-black pb-15 pt-20">
-          <p className="text-3xl font-bold text-center pb-5 text-[#E83151]">
+          <p className="text-3xl font-bold text-center pb-5 text-pink">
             MEET THE EXECS
           </p>
       

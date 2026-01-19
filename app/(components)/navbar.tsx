@@ -38,12 +38,12 @@ export const Navbar = () => {
               priority 
           />
           </Link>
-          <Link href="/about-us" className="hover:text-[#47bfb6]">About Us</Link>
-          <Link href="/events" className="hover:text-[#47bfb6]">Events</Link>
-          <Link href= "/teams" className="hover:text-[#47bfb6]">Teams</Link>
-          <Link href="/contact-us" className="hover:text-[#47bfb6]">Contact Us</Link>
-          <Link href="/sponsors" className="hover:text-[#47bfb6]">Sponsors</Link>
-          <Link href="/history" className="hover:text-[#47bfb6] flex flex-row">History</Link>
+          <Link href="/about-us" className="hover:text-cyan">About Us</Link>
+          <Link href="/events" className="hover:text-cyan">Events</Link>
+          <Link href= "/teams" className="hover:text-cyan">Teams</Link>
+          <Link href="/contact-us" className="hover:text-cyan">Contact Us</Link>
+          <Link href="/sponsors" className="hover:text-cyan">Sponsors</Link>
+          <Link href="/history" className="hover:text-cyan flex flex-row">History</Link>
         </div>
       </div>
     </div>

@@ -8,7 +8,7 @@ export const Footer = () => {
   return (
     // <motion.nav
     //  TODO: motion
-    <div className="bottom-50 xl:left-40 left-5 xl:right-40 right-5 bg-[#5603AD]">
+    <div className="bottom-50 xl:left-40 left-5 xl:right-40 right-5 bg-purple">
       <div className="flex flex-row bottom-50 mx-10">
       {/* // <div className="flex flex-row place-content-between"> */}
         {/** TODO: mobile nav resizing*/}
