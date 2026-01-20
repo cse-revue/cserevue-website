@@ -110,7 +110,7 @@ const Events: React.FC = () => {
         </div>
         <Link
           href="https://www.instagram.com/cserevue?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-          className=" hover:underline md:px-20 px-10 text-xl text-orange font-rowdies"
+          className=" hover:underline md:px-20 px-10 text-xl text-orange font-rowdies list-none p-0 m-0 indent-0"
         >Keep up to date on Discord! → REPLACE WITH DISCORD LINK</Link>
       </div>
       <Footer />
@@ -118,7 +118,7 @@ const Events: React.FC = () => {
   )
 }
 
-const events: EventDetails[] = [
+export const events: EventDetails[] = [
   {
     day: "01",
     month: "JAN",
@@ -156,4 +156,5 @@ const events: EventDetails[] = [
     desc: " it is the sound of an idiot, full of sound ?? and fury, signifying nothing. to be or not to be. that is the question. i guess. my daughter and my ducats."
   }
 ]
+
 export default Events
