@@ -37,11 +37,7 @@ const TeamMemberCard: React.FC<{member: Member, index: number}> = ({ member, ind
 
 const About: React.FC = () => {
   return (
-    <div className="w-full min-h-screen text-white font-rowdie
-        bg-gradient-to-b
-        from-black from-20% 
-        via-[#381E72] via-[percentage:20%_90%] 
-        to-[#000000] to-100%">
+    <div className="w-full min-h-screen text-white font-rowdie">
       <Navbar />
       <Header
         title="ABOUT US"

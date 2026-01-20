@@ -8,7 +8,7 @@ export const Footer = () => {
   return (
     // <motion.nav
     //  TODO: motion
-    <div className="bottom-50 xl:left-40 left-5 xl:right-40 right-5 bg-purple">
+    <div className="bottom-50 xl:left-40 left-5 xl:right-40 right-5 bg-purple text-white">
       <div className="flex flex-row bottom-50 mx-10">
       {/* // <div className="flex flex-row place-content-between"> */}
         {/** TODO: mobile nav resizing*/}
@@ -26,7 +26,7 @@ export const Footer = () => {
                 priority 
               />
             </Link>
-            <Link href="/" className="">
+            <Link href="https://www.instagram.com/cserevue/" className="">
               <Image 
                 src="/images/logos/discord-logo-bw.png"
                 alt="discord logo"
@@ -58,7 +58,7 @@ export const Footer = () => {
             </Link>
             <Link href="https://linktr.ee/cserevue" className="">
               <Image 
-                src="/images/logos/instagram-logo-bw.png"
+                src="/images/logos/youtube-logo-bw.png"
                 alt="linktree logo"
                 width = {150}
                 height = {50}

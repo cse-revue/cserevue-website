@@ -27,7 +27,7 @@ export const Navbar = () => {
       {/** TODO: mobile nav resizing*/}
       {/** desktop nav */}
       <div className="hidden md:flex md:flex-1 xl:justify-center items-center space-x-6">
-        <div className="flex items-center space-x-6 xl:space-x-12 md: space-x-6 flex-nowrap text-xl font-paragraph">
+        <div className="flex items-center space-x-6 xl:space-x-12 md: space-x-6 flex-nowrap text-xl text-white font-paragraph">
           <Link href="/" className="hidden md:block">
             <Image 
               src="/images/logos/logo-white-transparent.c73fcbb6.png"
