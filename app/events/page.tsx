@@ -6,7 +6,7 @@ import Header from "../(components)/header";
 import { Footer } from "../(components)/footer";
 import Link from "next/link";
 
-interface EventDetails {
+export interface EventDetails {
   day: string,
   month: string,
   time: string
@@ -39,15 +39,15 @@ const EventRows: React.FC<{event: EventDetails, index: number, maxEvents: number
     <div className={`border-t border-black ${index === maxEvents - 1 ? "border-b":""}`}>
       <div className="mt-4 mb-4 flex flex-col md:flex-row gap-8">
         <div className={`flex flex-row md:flex-col md:basis-1/10 ${index % 2 === 0? "bg-cyan" : "bg-forest"} text-center justify-center py-5`}>
-          <p className=" text-white font-lg font-rowdies my-2 md:my-0">
+          <p className=" text-white font-rowdies my-2 md:my-0">
             {event.day}
           </p>
           <p className="block md:hidden">{"\xa0"}</p>
-          <p className=" text-white font-lg font-rowdies my-2 md:my-0">
+          <p className=" text-white font-rowdies my-2 md:my-0">
             {event.month}
           </p>
         </div>
-        <div className="basis-3/4 text-black">
+        <div className="basis-3/4 text-black flex flex-col justify-center">
           <Link href={link} className="font-rowdies text-xl hover:underline">{event.eventName}</Link>
           <p className="font-paragraph">{event.desc}</p>
         </div>
@@ -75,11 +75,7 @@ const Events: React.FC = () => {
   const digits: string[] = diffString.split('');
 
   return (
-    <div className="w-full min-h-screen text-white
-        bg-linear-to-b
-        from-black from-20% 
-        via-[#381E72] via-[percentage:20%_90%] 
-        to-[#000000] to-100%">
+    <div className="w-full min-h-screen text-white">
       <Navbar />
       <Header
         title="Upcoming Events"
@@ -104,13 +100,13 @@ const Events: React.FC = () => {
       <div className="bg-white p-6 pb-12">
         <h1 className="text-pink font-rowdies text-3xl text-center mt-6 pt-4 pb-6">COMING UP</h1>
         <div className="md:px-20 px-10 mt-6 pb-4">
-          {events.map((event, index) => (
-            <EventRows key={index} event={event} index={index} maxEvents={events.length}/>
+          {EventsData.map((event, index) => (
+            <EventRows key={index} event={event} index={index} maxEvents={EventsData.length}/>
           ))}
         </div>
         <Link
           href="https://www.instagram.com/cserevue?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-          className=" hover:underline md:px-20 px-10 text-xl text-orange font-rowdies"
+          className=" hover:underline md:px-20 px-10 text-xl text-orange font-rowdies list-none p-0 m-0 indent-0"
         >Keep up to date on Discord! → REPLACE WITH DISCORD LINK</Link>
       </div>
       <Footer />
@@ -118,7 +114,7 @@ const Events: React.FC = () => {
   )
 }
 
-const events: EventDetails[] = [
+export const EventsData: EventDetails[] = [
   {
     day: "01",
     month: "JAN",
@@ -156,4 +152,5 @@ const events: EventDetails[] = [
     desc: " it is the sound of an idiot, full of sound ?? and fury, signifying nothing. to be or not to be. that is the question. i guess. my daughter and my ducats."
   }
 ]
+
 export default Events
