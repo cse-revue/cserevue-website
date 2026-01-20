@@ -151,11 +151,11 @@ export default function Home() {
         {/** gallery of photos*/}
         <div className="bg-black">
           <h1 className="text-white font-rowdies text-3xl text-center mt-6 pt-10">GALLERY</h1>
-          <div className="carousel carousel-center w-full py-10 pb-20">
+          {/* <div className="carousel carousel-center w-full py-10 pb-20">
             {gallery.map((link, index) => (
               <Gallery source = {link} index = {index} maxImages = {gallery.length}/>
             ))}
-          </div>
+          </div> */}
         </div>
 
       <Footer />
