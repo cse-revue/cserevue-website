@@ -21,10 +21,10 @@ const showDate = new Date(2026, 9, 23);
 const CountdownTile: React.FC<{digit: string}> = ({digit}) => {
   return (
     <div className="w-[200px] md:w-[230px] relative overflow-hidden bg-red-300">
-      <div className="h-[90px] sm:h-[120px] md:h-[163px] bg-[#46C0B7]"/>
+      <div className="h-[90px] sm:h-[120px] md:h-[163px] bg-cyan"/>
 
-      <div className="h-[90px] sm:h-[120px] md:h-[163px] bg-[#3AA299]"/>
-      <div className="absolute flex items-center inset-0 text-center font-bold text-8xl sm:text-9xl  justify-center">
+      <div className="h-[90px] sm:h-[120px] md:h-[163px] bg-d_cyan"/>
+      <div className="absolute flex items-center inset-0 text-center font-rowdies text-8xl sm:text-9xl justify-center">
         {digit}
       </div>
       
@@ -37,25 +37,26 @@ const EventRows: React.FC<{event: EventDetails, index: number, maxEvents: number
   
   return (
     <div className={`border-t border-black ${index === maxEvents - 1 ? "border-b":""}`}>
-      <div className="mt-2 mb-2 flex flex-col md:flex-row gap-4">
-        <div className={`flex flex-row md:flex-col md:basis-2/10 ${index % 2 === 0? "bg-[#46C0B7]" : "bg-[#1B512D]"} text-center justify-center`}>
-          <p className=" text-white font-bold font-lg my-2 md:my-0">
+      <div className="mt-4 mb-4 flex flex-col md:flex-row gap-8">
+        <div className={`flex flex-row md:flex-col md:basis-1/10 ${index % 2 === 0? "bg-cyan" : "bg-forest"} text-center justify-center py-5`}>
+          <p className=" text-white font-lg font-rowdies my-2 md:my-0">
             {event.day}
           </p>
-          <p className=" text-white font-bold font-lg my-2 md:my-0">
+          <p className="block md:hidden">{"\xa0"}</p>
+          <p className=" text-white font-lg font-rowdies my-2 md:my-0">
             {event.month}
           </p>
         </div>
         <div className="basis-3/4 text-black">
-          <Link href={link} className="font-bold text-xl hover:underline">{event.eventName}</Link>
-          <p className="">{event.desc}</p>
+          <Link href={link} className="font-rowdies text-xl hover:underline">{event.eventName}</Link>
+          <p className="font-paragraph">{event.desc}</p>
         </div>
-        <div className={`flex flex-col md:basis-3/10 basis-1/5 text-[#5603AD] justify-center`}>
-          <p className="">
+        <div className={`flex flex-col md:basis-3/10 basis-1/5 text-purple justify-center`}>
+          <p className="font-paragraph">
             <span className="font-bold">time: </span> {event.time}
           </p>
-          <p className="">
-            <span className="font-bold">room: </span> {event.room}
+          <p className=" font-paragraph">
+            <span className="font-bold">location: </span> {event.room}
           </p>
         </div>
       </div>
@@ -94,22 +95,22 @@ const Events: React.FC = () => {
             ))}
           </div>
         </div>
-        <div className="text-5xl sm:text-7xl font-bold mt-10 text-center">
+        <div className="text-5xl sm:text-7xl font-rowdies mt-10 text-center">
             DAYS UNTIL 2026 SHOW! 
         </div> 
       </div>
 
       {/** upcoming events */}
-      <div className="bg-white p-6">
-        <h1 className="text-[#E83151] font-bold text-3xl text-center mt-6">UPCOMING EVENTS</h1>
-        <div className="md:px-20 px-10 mt-6">
+      <div className="bg-white p-6 pb-12">
+        <h1 className="text-pink font-rowdies text-3xl text-center mt-6 pt-4 pb-6">COMING UP</h1>
+        <div className="md:px-20 px-10 mt-6 pb-4">
           {events.map((event, index) => (
             <EventRows key={index} event={event} index={index} maxEvents={events.length}/>
           ))}
         </div>
         <Link
           href="https://www.instagram.com/cserevue?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-          className=" hover:underline md:px-20 px-10 text-xl text-[#F49D37] font-bold"
+          className=" hover:underline md:px-20 px-10 text-xl text-orange font-rowdies"
         >Keep up to date on Discord! → REPLACE WITH DISCORD LINK</Link>
       </div>
       <Footer />
@@ -121,7 +122,7 @@ const events: EventDetails[] = [
   {
     day: "01",
     month: "JAN",
-    time: "4pm",
+    time: "4pm, Tuesday Week 6",
     room: "your bedroom",
     eventName: "BOARD GAMES",
     desc: "do you hear the people sing singing of songs of angry men. it is the voices of a people who will not be slaves again. if the beating of the heart echoes..."

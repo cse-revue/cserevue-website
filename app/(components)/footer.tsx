@@ -8,12 +8,12 @@ export const Footer = () => {
   return (
     // <motion.nav
     //  TODO: motion
-    <div className="bottom-50 xl:left-40 left-5 xl:right-40 right-5 bg-[#5603AD]">
+    <div className="bottom-50 xl:left-40 left-5 xl:right-40 right-5 bg-purple">
       <div className="flex flex-row bottom-50 mx-10">
       {/* // <div className="flex flex-row place-content-between"> */}
         {/** TODO: mobile nav resizing*/}
         {/** desktop nav */}
-        <div className="text-xl/15 font-bold mr-auto">
+        <div className="text-xl/15 font-paragraph font-bold mr-auto hidden xl:block">
           <div> Follow us </div>
           <div className="flex items-center justify-between space-x-6 xl:space-x-6">
             <Link href="https://www.instagram.com/cserevue?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className="hidden xl:block">
@@ -72,7 +72,7 @@ export const Footer = () => {
           <img 
             src="images/logos/logo-white-transparent-no-text.png"
             alt="CSERevue logo no-text"
-            className = "h-20 w-auto"
+            className = "h-20 w-auto pt-0.5"
           />
           <div className="ml-auto text-xs/8">© CSE Revue 2026</div>
         </div>
