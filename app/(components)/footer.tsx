@@ -10,11 +10,8 @@ export const Footer = () => {
     //  TODO: motion
     <div className="bottom-50 xl:left-40 left-5 xl:right-40 right-5 bg-purple text-white">
       <div className="flex flex-row bottom-50 mx-10">
-      {/* // <div className="flex flex-row place-content-between"> */}
-        {/** TODO: mobile nav resizing*/}
-        {/** desktop nav */}
         <div className=" text-xl/10 md:text-xl/15 font-paragraph font-bold mr-auto">
-          <div> Follow us </div>
+          <div className="xl:pt-2"> Follow us </div>
           <div className="flex items-center justify-between space-x-4 xl:space-x-6">
             <Link href="https://www.instagram.com/cserevue?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className="">
               <Image 
@@ -58,7 +55,7 @@ export const Footer = () => {
             </Link>
             <Link href="https://linktr.ee/cserevue" className="">
               <Image 
-                src="/images/logos/youtube-logo-bw.png"
+                src="/images/logos/linktree-logo-bw.png"
                 alt="linktree logo"
                 width = {150}
                 height = {50}

@@ -48,7 +48,7 @@ const EventRows: React.FC<{event: EventDetails, index: number, maxEvents: number
           </p>
         </div>
         <div className="basis-3/4 text-black flex flex-col justify-center">
-          <Link href={link} className="font-rowdies text-xl hover:underline">{event.eventName}</Link>
+          <Link href={link} className="font-rowdies text-xl hover:underline pb-1">{event.eventName}</Link>
           <p className="font-paragraph">{event.desc}</p>
         </div>
         <div className={`flex flex-col md:basis-3/10 basis-1/5 text-purple justify-center`}>
@@ -75,7 +75,7 @@ const Events: React.FC = () => {
   const digits: string[] = diffString.split('');
 
   return (
-    <div className="w-full min-h-screen text-white">
+    <div className="w-full min-h-screen text-white scroll-smooth">
       <Navbar />
       <Header
         title="Upcoming Events"
@@ -98,7 +98,7 @@ const Events: React.FC = () => {
 
       {/** upcoming events */}
       <div className="bg-white p-6 pb-12">
-        <h1 className="text-pink font-rowdies text-3xl text-center mt-6 pt-4 pb-6">COMING UP</h1>
+        <h1 id="comingup" className="text-pink font-rowdies text-3xl text-center mt-6 pt-4 pb-6 scroll-mt-18 md:scroll-mt-22 lg:scroll-mt-27 xl:scroll-mt-32">COMING UP</h1>
         <div className="md:px-20 px-10 mt-6 pb-4">
           {EventsData.map((event, index) => (
             <EventRows key={index} event={event} index={index} maxEvents={EventsData.length}/>

@@ -54,19 +54,19 @@ I think this blurb is meant to be longer than the other blurb so uh in the room 
       </div>
 
       {/**past shows */}
-      <div className="bg-black justify-center flex">
+      <div className="bg-black justify-center flex pb-6">
         <div className="text-white pt-15 pb-8">
           <p className="text-3xl font-rowdies text-center pb-3">
             PAST SHOWS
           </p>
           {/** both past shows */}
-          <div className="grid md:grid-cols-2 grid-cols-1 gap-15 xl:px-20 px-10 py-8">
+          <div className="grid md:grid-cols-2 grid-cols-1 gap-15 xl:px-20 px-10 py-8 font-paragraph">
             {/**2025 show */}
             <div className="w-full overflow-hidden"> 
               <img
                 src="/images/teams/cast.b91cf1d8.jpg"
               />
-              <p className="text-center text-md py-4">
+              <p className="text-center text-lg py-6">
                 2025: ScriptBoB SquareBrackets
               </p>
             </div>
@@ -75,12 +75,12 @@ I think this blurb is meant to be longer than the other blurb so uh in the room 
               <img
                 src="/images/teams/cast.b91cf1d8.jpg"
               />
-              <p className="text-center text-md py-4">
+              <p className="text-center text-lg py-6">
                 2024: Mean GURLs
               </p>
             </div>
           </div>
-          <Link href="/history" className="xl:px-20 px-10 text-orange hover:underline"> view full history →</Link>
+          <Link href="/history" className="xl:px-20 px-10 text-orange text-xl font-rowdies hover:underline"> view full history →</Link>
         </div>
       </div>
 

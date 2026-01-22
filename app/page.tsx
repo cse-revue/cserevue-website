@@ -50,6 +50,7 @@ const EventGrid: React.FC<{event: EventDetails, index: number, maxEvents: number
           <p className="text-white font-rowdies text-xl">{event.month}</p>
         </div>
         <div className={`flex flex-col basis-3/4 text-black md:justify-center text-lg`}>
+          <Link href={link} className="font-rowdies text-xl hover:underline pb-1">{event.eventName}</Link>
           <p className="font-paragraph">
             <span className="font-bold">time: </span> {event.time}
           </p>
@@ -67,7 +68,7 @@ const Gallery: React.FC<{source: string, index:number, maxImages: number}> = ({s
   const next: number = index === maxImages - 1 ? 0 : index + 1;
   
   return (
-    <div id={`slide${index}`} className="carousel-item relative w-1/3">
+    <div id={`slide${index}`} className="carousel-item relative w-full md:w-1/3 h-90">
       <img src={source} className="object-cover" />
       <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
         <a href={`#slide${prev}`} className="btn btn-circle">❮</a>
@@ -81,7 +82,7 @@ export default function Home() {
   // const maxVidHeight = 'calc(100vh-50px)'
   return (
     // <div className="w-full bg-[#8A84E2] min-h-screen text-white">
-    <div className="min-h-screen w-full text-black">
+    <div className="min-h-screen w-full text-black scroll-smooth">
         {/* <video 
           src="/promo.512e2c26.mp4"
           className="autoplay playsinline w-full overflow-y-hidden "
@@ -107,7 +108,7 @@ export default function Home() {
       <Navbar />
       <div>
         {/* what is cse revue */}
-        <div className="bg-white p-6 pb-12 relative w-full">
+        <div className="bg-white p-6 pb-6 relative w-full">
           <h1 className="text-pink font-rowdies text-3xl text-center mt-6 pt-4">WHAT IS CSE REVUE?</h1>
           <div className="relative px:2 xl:mx-60 my-8 flex">
             <img 
@@ -129,33 +130,33 @@ export default function Home() {
           </div>
         </div>
         {/* stats etc */}
-        <div className="bg-cyan p-5 md:px-30 grid sm:grid-cols-1 lg:grid-cols-3 space-y-3 text-white text-center items-center place-items-center">
+        <div className="bg-cyan p-5 md:px-30 grid sm:grid-cols-1 lg:grid-cols-3 space-y-3 text-white text-center items-center place-items-center mb-13">
           <div className="basis-4xs text-sm md:text-2xl font-rowdies">bringing shows to life since 2002</div>
           <div className="basis-xs text-sm md:text-2xl font-rowdies mb-4">1.2k members</div>
-          <div className="bg-white flex flex-row items-center p-3 md:p-5 w-50 md:w-85 md:text-3xl ml-auto">
-            <Link href="/INSERT_LINK" className="text-cyan font-rowdies hover:underline ml-5 w-2/3">{`READ MORE`}</Link>
+          <div className="bg-white flex flex-row items-center p-3 md:p-5 w-50 md:w-85 md:text-3xl lg:ml-auto">
+            <Link href="/about-us" className="text-cyan font-rowdies hover:underline lg:ml-5 w-2/3">{`READ MORE`}</Link>
             <img src="/images/other-resources/arrow.png" className="size-8 md:size-10 mx-3"></img>
           </div>
         </div>
         {/* upcoming events */}
-        <div className="text-center">
+        <div className="text-center mb-20">
           <h1 className="text-pink font-rowdies text-3xl text-center mt-6 pt-4">UPCOMING EVENTS</h1>
           <div className="md:px-20 px-10 mt-6 pb-4 grid grid-cols-2 text-left">
             {EventsData.slice(0,4).map((event, index) => (
               <EventGrid key={index} event={event} index={index} maxEvents={4}/>
             ))}
           </div>
-          <Link href="/INSERT_LINK" className="text-orange text-lg font-rowdies hover:underline">view all events →</Link>
+          <Link href="/events#comingup" scroll={true} className="text-orange text-xl font-rowdies hover:underline">view all events →</Link>
         </div>
 
         {/** gallery of photos*/}
         <div className="bg-black">
           <h1 className="text-white font-rowdies text-3xl text-center mt-6 pt-10">GALLERY</h1>
-          {/* <div className="carousel carousel-center w-full py-10 pb-20">
+          <div className="carousel carousel-center w-full py-10 pb-20">
             {gallery.map((link, index) => (
               <Gallery source = {link} index = {index} maxImages = {gallery.length}/>
             ))}
-          </div> */}
+          </div>
         </div>
 
       <Footer />
