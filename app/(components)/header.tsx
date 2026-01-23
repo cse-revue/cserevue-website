@@ -28,7 +28,7 @@ const Header: React.FC<HeaderInfo> = ({title, image, subheading}) => {
 
         {/**text overlay */}
         <div className='absolute inset-0 flex flex-col items-center justify-center p-4 text-center'>
-          <h1 className="text-4xl font-bold text-white mb-4 drop-shadow-md">
+          <h1 className="text-5xl font-bold font-rowdies text-white mb-4 drop-shadow-md">
             {title}
           </h1>
           <p className="text-lg text-white drop-shadow-md">
