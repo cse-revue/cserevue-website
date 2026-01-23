@@ -35,6 +35,7 @@ import image from "next/image";
 import { title } from "process";
 import { EventDetails, EventsData } from "./events/page";
 import Link from "next/link";
+import CarouselOptions from "./(components)/photo-carousel";
 // import Component from "$components/Component.svelte";
 // import Translate from "$components/Translate.svelte";
 
@@ -59,21 +60,6 @@ const EventGrid: React.FC<{event: EventDetails, index: number, maxEvents: number
           </p>
         </div>
       </div>    
-    </div>
-  )
-}
-
-const Gallery: React.FC<{source: string, index:number, maxImages: number}> = ({source, index, maxImages}) => {
-  const prev: number = index === 0 ? maxImages - 1 : index - 1;
-  const next: number = index === maxImages - 1 ? 0 : index + 1;
-  
-  return (
-    <div id={`slide${index}`} className="carousel-item relative w-full md:w-1/3 h-90">
-      <img src={source} className="object-cover" />
-      <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-        <a href={`#slide${prev}`} className="btn btn-circle">❮</a>
-        <a href={`#slide${next}`} className="btn btn-circle">❯</a>
-      </div>
     </div>
   )
 }
@@ -151,14 +137,8 @@ export default function Home() {
 
         {/** gallery of photos*/}
         <div className="bg-black">
-          <h1 className="text-white font-rowdies text-3xl text-center mt-6 pt-10">GALLERY</h1>
-          <div className="carousel carousel-center w-full py-10 pb-20">
-            {gallery.map((link, index) => (
-              <Gallery source = {link} index = {index} maxImages = {gallery.length}/>
-            ))}
-          </div>
+          <CarouselOptions/>
         </div>
-
       <Footer />
       </div>
     </div>
@@ -167,16 +147,16 @@ export default function Home() {
   )
 }
 
-const gallery: string[] = [
-  "/images/teams/band.012ea31f.jpg",
-  "/images/teams/cast.b91cf1d8.jpg",
-  "/images/teams/choreos.5b919d8d.jpg",
-  "/images/teams/costumes.f6241d2b.jpg",
-  "/images/teams/foh.c419396c.jpg",
-  "/images/teams/fundraising.772ec2cf.jpg",
-  "/images/teams/hospitality.37e9f532.jpg",
-  "/images/teams/promos.8c968f75.jpg"
-]
+// const gallery: string[] = [
+//   "/images/teams/band.012ea31f.jpg",
+//   "/images/teams/cast.b91cf1d8.jpg",
+//   "/images/teams/choreos.5b919d8d.jpg",
+//   "/images/teams/costumes.f6241d2b.jpg",
+//   "/images/teams/foh.c419396c.jpg",
+//   "/images/teams/fundraising.772ec2cf.jpg",
+//   "/images/teams/hospitality.37e9f532.jpg",
+//   "/images/teams/promos.8c968f75.jpg"
+// ]
 
 
 //   return (

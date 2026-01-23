@@ -30,7 +30,7 @@ const TeamMemberCard: React.FC<{member: Member, index: number}> = ({ member, ind
       />
       {/*was size-50 - change if you hate it like this*/}
       <h2 className={`text-center ${index % 2 === 0 ? 'text-purple' : 'text-cyan'} font-rowdies uppercase mt-3 text-xl`}>{member.name}</h2>
-      <p className={`font-paragraph text-xl`}>{member.position}</p>
+      <p className={`font-paragraph text-xl text-center`}>{member.position}</p>
     </div>
   )
 }
