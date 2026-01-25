@@ -7,11 +7,7 @@ import { Footer } from "../(components)/footer";
 
 export default function Sponsors() {
   return (
-    <div className="w-full min-h-screen text-white
-        bg-linear-to-b
-        from-black from-20% 
-        via-[#381E72] via-[percentage:20%_90%] 
-        to-[#000000] to-100%">
+    <div className="w-full min-h-screen text-black">
       <Navbar />
       <Header
         title="Woah Sponsors"

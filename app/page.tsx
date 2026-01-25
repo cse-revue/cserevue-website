@@ -26,7 +26,7 @@
 
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Navbar } from "./(components)/navbar";
 import { Footer } from "./(components)/footer";
 import Header from "./(components)/header";
@@ -41,6 +41,18 @@ import CarouselOptions from "./(components)/photo-carousel";
 
 const EventGrid: React.FC<{event: EventDetails, index: number, maxEvents: number}> = ({event, index, maxEvents}) => {
   const link: string = event.link? event.link : "https://www.facebook.com/cserevue/";
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Detect if screen is mobile-sized (< 768px)
+  useEffect(() => {
+      const checkScreenWidth = () => {
+          setIsMobile(window.innerWidth < 768);
+      };
+
+      checkScreenWidth(); // Run on mount
+      window.addEventListener("resize", checkScreenWidth);
+      return () => window.removeEventListener("resize", checkScreenWidth);
+  }, []);
   
   return (
     <div className={`border-t border-black ${index >= maxEvents - 2 ? "border-b":""} ${index % 2 === 0 ? "border-r":""}`}>
