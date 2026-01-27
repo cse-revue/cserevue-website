@@ -62,7 +62,7 @@ export default function ContactUs() {
       <div className="px-12 bg-white py-4">
         <h1 className="text-pink font-rowdies text-3xl">FAQs</h1>
         <div>
-          {FAQs.map((faq) => <FAQQuestion question={faq}/>)}
+          {FAQs.map((faq, index) => <FAQQuestion key={index} question={faq}/>)}
         </div>
       </div>
       <br/>
