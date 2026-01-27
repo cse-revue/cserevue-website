@@ -26,6 +26,11 @@
   --color-orange: var(--orange);
   --color-forest: var(--forest);
 
+  /* --color-primary: #D9D9D9; */ 
+  /* above is if we want accent behind white bg to be grey*/
+  --color-primary: #5603AD;
+
+
   --font-paragraph: "BioRhyme", serif;
   --font-rowdies: "Rowdies", sans-serif;
 }

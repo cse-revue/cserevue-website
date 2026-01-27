@@ -81,7 +81,7 @@ export const Navbar = () => {
 
         {/**mobile menu button */}
         <Button 
-          className="md:hidden rounded-full bg-white text-black text-4xl h-16 w-16 justify-center"
+          className="md:hidden rounded-full bg-purple text-white hover:text-gray-400 text-4xl h-16 w-16 justify-center"
           onClick={() => setIsOpen(!isOpen)}
         >
           <Menu className="scale-150"/>

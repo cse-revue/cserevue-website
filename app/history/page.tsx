@@ -31,7 +31,7 @@ const PrevShow: React.FC<{show: ShowInfo, index: number}> = ({show, index}) => {
             </svg> */}
         </div>
         {/* <!-- Card --> */}
-        <div className={`w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow ${index%2===0? "md:text-left":"md:text-right"} text-left overflow-hidden`}>
+        <div className={`w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-gray-100 p-4 rounded border border-slate-200 shadow ${index%2===0? "md:text-left":"md:text-right"} text-left overflow-hidden`}>
           <div className={`flex md:flex-row flex-col gap-6 ${index % 2 === 0 ? "md:flex-row-reverse" : ""}`}>
             <div className="flex-1 flex">
               <img

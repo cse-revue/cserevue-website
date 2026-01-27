@@ -40,7 +40,7 @@ const About: React.FC = () => {
     <div className="w-full min-h-screen text-white font-rowdie">
       <Navbar />
       <Header
-        title="ABOUT US"
+        title="About Us"
         image="/images/teams/cast.b91cf1d8.jpg"
       />
       
