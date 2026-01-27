@@ -15,7 +15,7 @@ export default function CarouselOptions() {
       >
         <CarouselContent>
           {Array.from({ length: gallery.length }).map((_, index) => (
-            <CarouselItem className="md:basis-1/2 lg:basis-1/3 flex items-center" key={index}>
+            <CarouselItem className="md:basis-1/2 lg:basis-1/3 flex items-center object-cover" key={index}>
               <div className="p-1">
                 <img
 									src={gallery[index]}

@@ -13,14 +13,14 @@ export interface HeaderInfo {
 const Header: React.FC<HeaderInfo> = ({title, image, subheading}) => {
   return (
     <div className="relative overflow-hidden w-full h-70 items-center">
-      <motion.div className="text-white" initial={{ opacity: 0, y: 0 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
+      <motion.div className="text-white uppercase" initial={{ opacity: 0, y: 0 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
         {/**optional image background */}
         {image ? (
           <Image
             src={image}
             alt={title + " image"}
             fill
-            className="object-center object-cover opacity-50"
+            className="object-center object-cover opacity-50 brightness-70"
           />
         ): (
           <div className='w-full h-full'></div>

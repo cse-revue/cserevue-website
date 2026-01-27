@@ -14,10 +14,10 @@ const FAQQuestion: React.FC<{question: FaqInfo}> = ({question}) => {
   return(
     <div className="py-0.5">
       <div className="bg-cyan rounded-t mt-2">
-        <p className="text-paragraph p-3">{question.question}</p>
+        <p className="font-paragraph p-3 text-white">{question.question}</p>
       </div>
       <div className="rounded-b mb-2 bg-[#F2F2F2]">
-        <p className="text-paragraph p-3">{question.answer}</p>
+        <p className="font-paragraph p-3">{question.answer}</p>
       </div>
     </div>
     
@@ -33,33 +33,33 @@ export default function ContactUs() {
         image="/images/teams/cast.b91cf1d8.jpg"
       />
       <br/>
-      <div className="items-center justify-center flex bg-black">
-        <div className=" gap-8 p-20 grid sm:grid-cols-2 max-w-fit ">
-          <div className="flex flex-col justify-center items-center bg-[#F2F2F2] rounded-4xl max-w-fit max-h-fit p-8 border border-[#C1C1C1]">
+      <div className="items-center justify-center flex">
+        <div className=" gap-10 md:gap-25 p-15 grid sm:grid-cols-2 max-w-fit">
+          <div className="flex flex-col justify-center items-center bg-[#F2F2F2] rounded-4xl w-full p-8 md:px-14">
             <img
-              src="/images/logos/instagram-logo-bw.png"
-              width={100}
-              height={100}
-              className="object-center"
+              src="/images/other-resources/email.png"
+              width={120}
+              height={120}
+              className="object-center opacity-50 md:w-50"
             ></img>
-            <h1 className="font-rowdies text-2xl text-center mt-6">EMAIL US</h1>
-            <p className="font-paragraph text-center">exec@cserevue.org.au</p>
+            <h1 className="font-rowdies text-2xl md:text-3xl text-center mt-1">EMAIL US</h1>
+            <p className="font-paragraph text-center md:text-lg">exec@cserevue.org.au</p>
           </div>
-          <div className="flex flex-col justify-center items-center bg-[#F2F2F2] rounded-4xl max-w-fit max-h-fit p-8 border border-[#C1C1C1]">
+          <div className="flex flex-col justify-center items-center bg-[#F2F2F2] rounded-4xl w-full p-8">
             <img
-              src="/images/logos/instagram-logo-bw.png"
-              width={100}
-              height={100}
-              className="object-center"
+              src="/images/other-resources/sms.png"
+              width={120}
+              height={120}
+              className="object-center opacity-50 p-3 md:p-6 md:w-50"
             ></img>
-            <h1 className="font-rowdies text-2xl text-center mt-6">MESSAGE US</h1>
-            <p className="font-paragraph text-center">@cserevue on Insta</p>
+            <h1 className="font-rowdies text-2xl md:text-3xl text-center mt-1">MESSAGE US</h1>
+            <p className="font-paragraph text-center md:text-lg">@cserevue on Insta</p>
           </div>
         </div>
       </div>
 
       {/**FAQ */}
-      <div className="px-12 bg-white py-4">
+      <div className="px-12 bg-white py-2 pb-9">
         <h1 className="text-pink font-rowdies text-3xl">FAQs</h1>
         <div>
           {FAQs.map((faq, index) => <FAQQuestion key={index} question={faq}/>)}
