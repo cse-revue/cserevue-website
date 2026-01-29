@@ -62,7 +62,7 @@ export const Navbar = () => {
 
         {/** desktop nav */}
         <div className="hidden md:flex md:flex-1 md:justify-center items-center space-x-6">
-          <div className="flex items-center xl:space-x-12 md: space-x-6 flex-nowrap text-xl text-white font-paragraph">
+          <div className="flex items-center xl:space-x-10 md: space-x-6 flex-nowrap text-xl text-white font-paragraph">
             <Link href="/" className="hidden md:block">
               <img 
                 src="/images/logos/logo-white-transparent.c73fcbb6.png"
