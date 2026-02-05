@@ -13,7 +13,7 @@ export default function Sponsors() {
         title="Sponsors"
         image="/images/teams/webmin.fd05e87d.jpg"
       />
-      <div className="flex flex-row justify-center items-center gap-10 p-6">
+      <div className="flex flex-col sm:flex-row justify-center items-center gap-10 p-6">
           <img
             src ="/images/logos/cse-school.235d63c3.png"
             width={240}

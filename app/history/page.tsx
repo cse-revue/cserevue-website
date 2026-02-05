@@ -76,7 +76,7 @@ export default function History() {
       <div className="text-lg font-paragraph text-center bg-black text-white p-5">
         Curious about our previous shows?
         <br/>
-        Find the full playlist {"\xa0"}
+        Find the full playlist {"\x20"}
         <span className="text-pink font-bold hover:underline">
           <Link
             href="https://www.youtube.com/playlist?list=PLTwUb6NYssa2rpZs0uf8vD8fIOHscDtE_"
