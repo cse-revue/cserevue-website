@@ -105,9 +105,9 @@ const Events: React.FC = () => {
           ))}
         </div>
         <Link
-          href="https://www.instagram.com/cserevue?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+          href="https://discord.gg/AvQjqjmmQR"
           className=" hover:underline md:px-20 px-10 text-xl text-orange font-rowdies list-none p-0 m-0 indent-0"
-        >Keep up to date on Discord! → REPLACE WITH DISCORD LINK</Link>
+        >Keep up to date on Discord! →</Link>
       </div>
       <Footer />
     </div>
