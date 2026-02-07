@@ -43,7 +43,7 @@ export default function ContactUs() {
               className="object-center opacity-50 md:w-50"
             ></img>
             <h1 className="font-rowdies text-2xl md:text-3xl text-center mt-1">EMAIL US</h1>
-            <p className="font-paragraph text-center md:text-lg">exec@cserevue.org.au</p>
+            <p className="font-paragraph text-center md:text-lg mb-6">exec@cserevue.org.au</p>
           </div>
           <div className="flex flex-col justify-center items-center bg-[#F2F2F2] rounded-4xl w-full p-8">
             <img
@@ -53,7 +53,7 @@ export default function ContactUs() {
               className="object-center opacity-50 p-3 md:p-6 md:w-50"
             ></img>
             <h1 className="font-rowdies text-2xl md:text-3xl text-center mt-1">MESSAGE US</h1>
-            <p className="font-paragraph text-center md:text-lg">@cserevue on Insta</p>
+            <p className="font-paragraph text-center md:text-lg mb-6">@cserevue on Insta</p>
           </div>
         </div>
       </div>
@@ -89,3 +89,11 @@ const FAQs: FaqInfo[] = [
     answer: "A RAINBOW!!"
   }
 ]
+
+// potential questions: 
+// what is the commitment
+// when does show run (times, how many shows)
+// i have no experience, can i still join?
+// i have no time, can i still join?
+// how do i sign up???
+// does everyone get in, or do i have to audition for certain parts?
