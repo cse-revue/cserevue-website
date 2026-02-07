@@ -4,6 +4,8 @@ import React from "react";
 import { Navbar } from ".././(components)/navbar";
 import Header from ".././(components)/header"
 import { Footer } from "../(components)/footer";
+import { bandDesc, castDesc, designDesc, eventsDesc, fohDesc, hospoDesc, markDesc, scriptsDesc, techDesc, videosDesc } from "./descriptions";
+import { mark } from "framer-motion/client";
 
 interface TeamTileInfo {
   teamName?: string,
@@ -16,10 +18,10 @@ interface TeamTileInfo {
 const TeamCard: React.FC<{team: TeamTileInfo}> = ({team}) => {
   return (
     <div className="flex flex-col">
-      <div className="relative overflow-hidden w-full h-50 items-center group">
+      <div className="relative overflow-hidden w-full h-60 items-center group">
         <img
           src={team.image}
-          className="object-cover opacity-100 group-hover:opacity-50"
+          className="object-cover opacity-100 group-hover:opacity-80 group-hover:brightness-50"
         >
         </img>
         {/**optional stuff for teams */}
@@ -27,7 +29,7 @@ const TeamCard: React.FC<{team: TeamTileInfo}> = ({team}) => {
         {team.hover == true ? (
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center group">
             <h1 className="text-5xl text-white font-rowdies group-hover:hidden">{team.teamName}</h1>
-            <p className="text-md font-paragraph text-white hidden group-hover:block">{team.desc}</p>
+            <p className="text-xs lg:text-sm m-5 font-paragraph text-white hidden group-hover:block">{team.desc}</p>
           </div>
           // <div>
 
@@ -78,15 +80,12 @@ const Teams = () => {
         ))}
       </div>
       {/** discord sign up link */}
-      <div className="bg-pink text-white hover:bg-black p-8 group">
+      <div className="bg-pink text-white hover:bg-black p-14 group mb-10">
         {/* <div className="p-8"> */}
-        <h1 className="font-rowdies text-center text-2xl">INTERESTED IN SIGNING UP? </h1>
-        <p className="font-paragraph text-center text-lg mt-4 group-hover:text-pink">JOIN OUR DISCORD NOW! - NEED THE LINK</p>
+        <h1 className="font-rowdies text-center text-4xl">INTERESTED IN SIGNING UP? </h1>
+        <p className="font-paragraph text-center text-xl mt-4 group-hover:text-pink">JOIN OUR DISCORD NOW! - NEED THE LINK</p>
         {/* </div> */}
       </div>
-      
-      this is teams
-      <div>use like teams.map to create team cards that can expand</div>
       <Footer />
     </div>
 
@@ -98,12 +97,12 @@ const teams: TeamTileInfo[] = [
   {
     teamName: "Cast", 
     image: "/images/teams/choreos.5b919d8d.jpg",
-    desc: "kjh",
+    desc: castDesc,
     hover: true
   }, {
     teamName: "Tech",
     image: "/images/teams/choreos.5b919d8d.jpg",
-    desc: "sdf",
+    desc: techDesc,
     hover: true
   }, {
     image: "/images/teams/choreos.5b919d8d.jpg",
@@ -115,17 +114,17 @@ const teams: TeamTileInfo[] = [
   {
     teamName: "Band",
     image: "/images/teams/choreos.5b919d8d.jpg",
-    desc: "asdf",
+    desc: bandDesc,
     hover: true
   }, {
     teamName: "Scripts",
     image: "/images/teams/choreos.5b919d8d.jpg",
-    desc: "sdf",
+    desc: scriptsDesc,
     hover: true
   }, {
     teamName: "Design",
     image: "/images/teams/choreos.5b919d8d.jpg",
-    desc: "vfds",
+    desc: designDesc,
     hover: true
   }, {
     image: "/images/teams/choreos.5b919d8d.jpg",
@@ -136,12 +135,12 @@ const teams: TeamTileInfo[] = [
   }, {
     teamName: "Marketing",
     image: "/images/teams/choreos.5b919d8d.jpg",
-    desc: "sdf",
+    desc: markDesc,
     hover: true
   }, {
     teamName: "Events",
     image: "/images/teams/choreos.5b919d8d.jpg",
-    desc: "4567",
+    desc: eventsDesc,
     hover: true
   }, {
     image: "/images/teams/choreos.5b919d8d.jpg",
@@ -155,7 +154,7 @@ const teams: TeamTileInfo[] = [
   }, {
     teamName: "Front of House",
     image: "/images/teams/choreos.5b919d8d.jpg",
-    desc: "78",
+    desc: fohDesc,
     hover: true
   }, {
     image: "/images/teams/choreos.5b919d8d.jpg",
@@ -163,14 +162,15 @@ const teams: TeamTileInfo[] = [
   }, {
     teamName: "Videos & Photography",
     image: "/images/teams/choreos.5b919d8d.jpg",
-    desc: "89",
+    desc: videosDesc,
     hover: true
   }, {
     teamName: "Hospitality",
     image: "/images/teams/choreos.5b919d8d.jpg",
-    desc: "245",
+    desc: hospoDesc,
     hover: true
   }
 ]
 
 export default Teams
+
