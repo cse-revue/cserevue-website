@@ -11,7 +11,7 @@ export default function Sponsors() {
       <Navbar />
       <Header
         title="Sponsors"
-        image="/images/teams/webmin.fd05e87d.jpg"
+        image="/images/photossss/IMG_3689.JPG"
       />
       <div className="flex flex-col sm:flex-row justify-center items-center gap-10 p-6">
           <img

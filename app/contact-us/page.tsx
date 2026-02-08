@@ -64,6 +64,14 @@ export default function ContactUs() {
         <div>
           {FAQs.map((faq, index) => <FAQQuestion key={index} question={faq}/>)}
         </div>
+        <div className="py-0.5">
+          <div className="bg-cyan rounded-t mt-2">
+            <p className="font-paragraph p-3 text-white">How do I sign up?</p>
+          </div>
+          <div className="rounded-b mb-2 bg-[#F2F2F2]">
+            <p className="font-paragraph p-3">Join the discord <a href="https://discord.gg/AvQjqjmmQR" className="underline hover:text-pink">here</a> for news, updates, sign-ups and everything else CSE Revue related!</p>
+          </div>
+        </div>
       </div>
       <br/>
       <Footer />
@@ -73,22 +81,37 @@ export default function ContactUs() {
 
 const FAQs: FaqInfo[] = [
   {
-    question: "how many ribs does a human have?",
-    answer: "well, actually, many people think it’s 12. this is false. the real number is i don’t know man what."
+    question: "When does the show run?",
+    answer: "Show week is 23-30 October, with our three production nights being 7-9pm on the 28th, 29th and 30th (Wednesday-Friday)."
   }, {
-    question: "how much wood could a woodchuck chuck?",
-    answer: "WOOD WOOD WOOD"
+    question: "What's the time commitment for joining revue?",
+    answer: "That totally depends! Cast and tech involvement is incredibly intensive in the weeks leading up to the show, and band rehearses fairly frequently as well. Some teams, such as front of house and hospitality, should be available for most show nights. For most of the other teams, like events and marketing, your involvement can be totally up to you depending on your own commitments. \nIf you don't want to commit to a port but still want to be part of CSE Revue, our weekly events are open to everyone! Come along, meet new people and have some fun. And most importantly, COME SEE OUR SHOW!"
   }, {
-    question: "what is the capital of new zealand?",
-    answer: "idk sydney??"
+    question: "I have no experience, can I still be involved?",
+    answer: "Yes!!! Other than band, which does require a modicum of vocal or instrumental ability, every single port is open to anyone and everyone! If you can't sing or dance, or have never operated lights in your life, never fear, for we will teach you everything you need to know."
   }, {
-    question: "to be or not to be?",
-    answer: "not to be. always not to be."
-  }, {
-    question: "what colour does piano taste like?",
-    answer: "A RAINBOW!!"
+    question: "Does everyone get in to cast, or do I have to audition?",
+    answer: "There is an audition process, but everyone who signs up and auditions will have a role in the production."
   }
 ]
+// const FAQs: FaqInfo[] = [
+//   {
+//     question: "how many ribs does a human have?",
+//     answer: "well, actually, many people think it’s 12. this is false. the real number is i don’t know man what."
+//   }, {
+//     question: "how much wood could a woodchuck chuck?",
+//     answer: "WOOD WOOD WOOD"
+//   }, {
+//     question: "what is the capital of new zealand?",
+//     answer: "idk sydney??"
+//   }, {
+//     question: "to be or not to be?",
+//     answer: "not to be. always not to be."
+//   }, {
+//     question: "what colour does piano taste like?",
+//     answer: "A RAINBOW!!"
+//   }
+// ]
 
 // potential questions: 
 // what is the commitment

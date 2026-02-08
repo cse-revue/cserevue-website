@@ -80,7 +80,7 @@ const Teams = () => {
       <Navbar />
       <Header
         title="Discover Our Teams"
-        image="/images/teams/tech.63e0c237.jpg"
+        image="/images/photossss/IMG_3178.JPG"
       />
       {/** teams tiles */}
       <div className="bg-white grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-12 p-16">
@@ -89,12 +89,14 @@ const Teams = () => {
         ))}
       </div>
       {/** discord sign up link */}
-      <div className="bg-pink text-white hover:bg-black p-14 group mb-10">
-        {/* <div className="p-8"> */}
-        <h1 className="font-rowdies text-center text-4xl">INTERESTED IN SIGNING UP? </h1>
-        <p className="font-paragraph text-center text-xl mt-4 group-hover:text-pink">JOIN OUR DISCORD NOW! - NEED THE LINK</p>
-        {/* </div> */}
-      </div>
+      <a href="https://discord.gg/AvQjqjmmQR" className="block">
+        <div className="bg-pink text-white hover:bg-black p-14 group mb-10">
+          {/* <div className="p-8"> */}
+          <h1 className="font-rowdies text-center text-4xl">INTERESTED IN SIGNING UP? </h1>
+          <p className="font-paragraph text-center text-xl mt-4 group-hover:text-pink">JOIN OUR DISCORD NOW!</p>
+          {/* </div> */}
+        </div>
+      </a>
       <Footer />
     </div>
 

@@ -48,8 +48,10 @@ const About: React.FC = () => {
       <div className="flex w-full bg-white text-black justify-center">
         <p className="text-black font-paragraph max-w-190 text-center my-20 mx-10 leading-8 text-xl">
           <span className="text-pink text-4xl font-rowdies">CSE REVUE </span>
-          is a group of people and we do theatre and i cannot fluff for this long so lorem ipsum yeahhhhhh potatoes tomatoes egg and soup let us go then you and i.
-I think this blurb is meant to be longer than the other blurb so uh in the room the women come and go talking of michaelangelo do i dare disturb the universe do i dare to eat a peach i shall wear the bottoms of my trousers rolled
+          is a live comedy sketch show held during October at UNSW. Fully produced and directed by members of the society, the show serves to highlight the technical and creative talents of UNSW students, as well as an opportunity for students to further develop their university experience.
+
+          {/* is a group of people and we do theatre and i cannot fluff for this long so lorem ipsum yeahhhhhh potatoes tomatoes egg and soup let us go then you and i.
+I think this blurb is meant to be longer than the other blurb so uh in the room the women come and go talking of michaelangelo do i dare disturb the universe do i dare to eat a peach i shall wear the bottoms of my trousers rolled */}
         </p>
       </div>
 

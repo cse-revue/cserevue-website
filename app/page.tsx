@@ -33,9 +33,10 @@ import Header from "./(components)/header";
 import { motion } from "framer-motion";
 import image from "next/image";
 import { title } from "process";
-import { EventDetails, EventsData } from "./events/page";
+import { EventDetails } from "./events/page";
 import Link from "next/link";
 import CarouselOptions from "./(components)/photo-carousel";
+import { EventsData } from "./events/event-details";
 // import Component from "$components/Component.svelte";
 // import Translate from "$components/Translate.svelte";
 
@@ -112,7 +113,7 @@ export default function Home() {
             <img 
               src="/images/teams/cast.b91cf1d8.jpg"
               alt=""
-              className="absolute right-5 object-cover size-60 lg:h-90 w-2/3 lg:pr-20 aspect-fixed"
+              className="absolute right-4 object-cover size-60 lg:h-60 w-3/5 aspect-fixed"
             ></img>
             <div className="mr-auto bottom-0">
               <img
@@ -121,8 +122,11 @@ export default function Home() {
                 className="relative w-2/10 lg:w-1/10 left-5"
               ></img>
               <div className="relative left-5 bg-white w-2/3 text-[12px] lg:text-lg font-paragraph py-3 pr-3">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim </p>
+                <p>
+                  Despite our name, we're open to students of all faculties! We welcome students of all skill levels to try their hand at theatre, whether that means standing on stage for the first time or ensuring the show goes on backstage, or even promoting us as part of our other teams.
+                </p>
+                {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim </p> */}
               </div>
             </div>
           </div>
@@ -130,10 +134,10 @@ export default function Home() {
         {/* stats etc */}
         <div className="bg-cyan p-5 md:px-30 grid sm:grid-cols-1 lg:grid-cols-3 space-y-3 text-white text-center items-center place-items-center mb-13">
           <div className="basis-4xs text-sm md:text-2xl font-rowdies">bringing shows to life since 2002</div>
-          <div className="basis-xs text-sm md:text-2xl font-rowdies mb-4">1.2k members</div>
+          <div className="basis-xs text-sm md:text-2xl font-rowdies mb-4">500+ members</div>
           <div className="bg-white flex flex-row items-center p-3 md:p-5 w-50 md:w-85 md:text-3xl lg:ml-auto">
             <Link href="/about-us" className="text-cyan font-rowdies hover:underline lg:ml-5 w-2/3">{`READ MORE`}</Link>
-            <img src="/images/other-resources/arrow.png" className="size-8 md:size-10 mx-3"></img>
+            <img src="/images/other-resources/arrow.png" className="size-8 md:size-8 mx-3"></img>
           </div>
         </div>
         {/* upcoming events */}

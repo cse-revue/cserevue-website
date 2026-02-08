@@ -13,7 +13,7 @@ export const Footer = () => {
         <div className=" text-xl/10 md:text-xl/15 font-paragraph font-bold mr-auto">
           <div className="xl:pt-2"> Follow us </div>
           <div className="flex items-center justify-between space-x-4 xl:space-x-6">
-            <Link href="https://www.instagram.com/cserevue?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className="">
+            <Link href="https://www.instagram.com/cserevue?igsh=MTc4NzY0NG0wYXV4ZQ==" className="">
               <Image 
                 src="/images/logos/instagram-logo-bw.png"
                 alt="instagram logo"
@@ -23,7 +23,7 @@ export const Footer = () => {
                 priority 
               />
             </Link>
-            <Link href="https://www.instagram.com/cserevue/" className="">
+            <Link href="https://discord.gg/AvQjqjmmQR" className="">
               <Image 
                 src="/images/logos/discord-logo-bw.png"
                 alt="discord logo"
@@ -71,7 +71,7 @@ export const Footer = () => {
             alt="CSERevue logo no-text"
             className = " h-14 md:h-20 w-auto pt-0.5"
           />
-          <div className="ml-auto text-[8px]/4 md:text-xs/8">© CSE Revue 2026</div>
+          <div className="ml-auto text-[5]/4 md:text-xs/8 font-paragraph">© CSE Revue 2026</div>
         </div>
       </div>
     </div>
