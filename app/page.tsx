@@ -33,9 +33,10 @@ import Header from "./(components)/header";
 import { motion } from "framer-motion";
 import image from "next/image";
 import { title } from "process";
-import { EventDetails, EventsData } from "./events/page";
+import { EventDetails } from "./events/page";
 import Link from "next/link";
 import CarouselOptions from "./(components)/photo-carousel";
+import { EventsData } from "./events/event-details";
 // import Component from "$components/Component.svelte";
 // import Translate from "$components/Translate.svelte";
 

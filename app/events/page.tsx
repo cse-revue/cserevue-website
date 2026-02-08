@@ -5,6 +5,7 @@ import { Navbar } from ".././(components)/navbar";
 import Header from "../(components)/header";
 import { Footer } from "../(components)/footer";
 import Link from "next/link";
+import { EventsData } from "./event-details";
 
 export interface EventDetails {
   day: string,
@@ -114,43 +115,6 @@ const Events: React.FC = () => {
   )
 }
 
-export const EventsData: EventDetails[] = [
-  {
-    day: "01",
-    month: "JAN",
-    time: "4pm, Tuesday Week 6",
-    room: "your bedroom",
-    eventName: "BOARD GAMES",
-    desc: "do you hear the people sing singing of songs of angry men. it is the voices of a people who will not be slaves again. if the beating of the heart echoes..."
-  }, {
-    day: "10",
-    month: "JAN",
-    time: "4pm",
-    room: "ikea",
-    eventName: "SCRIPTS",
-    desc: "carry on my wayward son, there’ll be peace when you are done, lay your weary head to rest, dont you cry no more. "
-  }, {
-    day: "15",
-    month: "JAN",
-    time: "4pm",
-    room: "walmart",
-    eventName: "KARAOKE",
-    desc: "tomorrow and tomorrow and tomorrow creeps in this petty pace from day to day to the last syllable of recorded time. and all our yesterdays have lighted..."
-  }, {
-    day: "19",
-    month: "JAN",
-    time: "4pm",
-    room: "business building bathroom",
-    eventName: "JUGGLING",
-    desc: "fools the road to dusty death. out, out brief candle. life’s but a walking shadow, a poor fool that struts and frets his hour upon the stage and then is heard no more."
-  }, {
-    day: "25",
-    month: "JAN",
-    time: "4pm",
-    room: "hell's kitchen",
-    eventName: "POTATO MASHING",
-    desc: " it is the sound of an idiot, full of sound ?? and fury, signifying nothing. to be or not to be. that is the question. i guess. my daughter and my ducats."
-  }
-]
+
 
 export default Events
