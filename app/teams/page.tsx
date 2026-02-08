@@ -19,11 +19,20 @@ const TeamCard: React.FC<{team: TeamTileInfo}> = ({team}) => {
   return (
     <div className="flex flex-col">
       <div className="relative overflow-hidden w-full h-60 items-center group">
-        <img
-          src={team.image}
-          className="object-cover opacity-100 group-hover:opacity-80 group-hover:brightness-50"
-        >
-        </img>
+        {team.hover == true ? (
+          <img
+            src={team.image}
+            className="object-cover opacity-100 group-hover:opacity-80 group-hover:brightness-50"
+          >
+          </img>
+        ): (
+          <img
+            src={team.image}
+            className="object-cover opacity-100"
+          >
+          </img>
+        )}
+        
         {/**optional stuff for teams */}
         {/**trying to make the hover work GOTTA SEPARATE THE HIDDEN FOR THE TWO TEXTS IDKKKKK */}
         {team.hover == true ? (
