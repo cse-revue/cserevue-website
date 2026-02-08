@@ -41,92 +41,93 @@ export const EventsData: EventDetails[] = [
     day: "20",
     month: "FEB",
     time: "5pm, Friday Week 1",
-    room: "TBD",
+    room: "Alumni Lawn",
     eventName: "Picnic",
     desc: "Come join us for our first CSE Revue event! There'll be games, snacks, and the perfect opportunity to make friends both old and new as we enter the first week of 2026."
 }, {
     day: "25",
     month: "FEB",
     time: "6-8pm, Wednesday Week 2",
-    room: "TBD",
+    room: "Civil Engineering 101",
     eventName: "Karaoke Night",
     desc: "Can you obsessively recite every song of Hamilton? Are you just itching to perform your own rendition of Sweet Caroline? Or do you, perhaps, feel the desperate urge to rick-roll the greater community? Well, whether you're a seasoned singer or you can't even carry the tune of Happy Birthday, join us for a memorable night of lecture-hall karaoke!"
 }, {
     day: "06",
     month: "MAR",
     time: "6-9pm, Friday Week 3",
-    room: "TBD",
+    room: "Colombo Theatre B",
     eventName: "2025 Revue Screening",
     desc: "Whether you missed out on watching the CSE Revue production of 2026, or you want to relive it for the fifth time, now is the perfect opportunity! Come join us, laugh, cry, get inspired, because the show only gets better which each viewing."
 }, {
     day: "13",
     month: "MAR",
     time: "6-8pm, Friday Week 4",
-    room: "TBD",
+    room: "Ainsworth G01",
     eventName: "Board Games",
     desc: "Catan! Unstable Unicorns! Articulate! And more! Come play some board games with complete strangers, and we promise you'll be the fastest of friends once you've traded Pebble Beach for Kings Cross Station."
-}, {
-    day: "20",
-    month: "MAR",
-    time: "6-8pm, Friday Week 5",
-    room: "TBD",
-    eventName: "Nostalgia Night",
-    desc: "As we near the end of the first half of this trimester, what better way to relax than to play some beloved childhood games? We don't have a Purble Place license anymore, unfortunately, but join us for a night of musical chairs, pin the tail on the donkey, and all these games you played when you were six years old and have never really matured out of."
-}, {
-    day: "01",
-    month: "APR",
-    time: "6-8pm, Wednesday Week 7",
-    room: "TBD",
-    eventName: "Acting Block",
-    desc: "It doesn't matter if you've never even stepped foot on a stage before. Now is the perfect time for you - yes, you - to have some low-stakes fun with our acting block! We'll run various acting and improv games, and it's guaranteed to be a hell of a fun night, so come right along!"
-}, {
-    day: "03",
-    month: "APR",
-    time: "6-9pm, Friday Week 7",
-    room: "TBD",
-    eventName: "Trivia Night",
-    desc: "As a bunch of self-professed theatre nerds, you can guarantee that we know a bunch of useless facts. But do you dare to put your own knowledge to the test? There's only one way to find out - join us for a night of trivia. There'll be snacks, a whole bunch of fun, a place for you to show off, and even some juicy prizes for the winners."
-}, {
-    day: "08",
-    month: "APR",
-    time: "6-8pm, Wednesday Week 8",
-    room: "TBD",
-    eventName: "Script Block",
-    desc: "Script block is open to all! It doesn't matter if you've never held a pen in your life, as long as you come with passion and verve. We bring snacks, write skits, and generally make all sorts of things up. Script block is not for the faint of heart, but never fear, there's no judgement here. You could be a poet when you don't even know it, and you might even end up writing a sketch for our 2026 show!"
-}, {
-    day: "10",
-    month: "APR",
-    time: "6-8pm, Friday Week 8",
-    room: "TBD",
-    eventName: "Karaoke",
-    desc: "If you came to our first karaoke and are wondering why there's another one, well, this is a theatre society. And who doesn't love karaoke? Come join us for even more show tunes, pop songs, and unskippable Youtube ads!"
-}, {
-    day: "15",
-    month: "APR",
-    time: "6-8pm, Wednesday Week 9",
-    room: "TBD",
-    eventName: "Script Block",
-    desc: "Script block is open to all! It doesn't matter if you've never held a pen in your life, as long as you come with passion and verve. We bring snacks, write skits, and generally make all sorts of things up. Script block is not for the faint of heart, but never fear, there's no judgement here. You could be a poet when you don't even know it, and you might even end up writing a sketch for our 2026 show!"
-}, {
-    day: "17",
-    month: "APR",
-    time: "6-8pm, Friday Week 9",
-    room: "TBD",
-    eventName: "Board Games",
-    desc: "Board game night is the perfect opportunity to meet new people and make new friends, for there is truly no better bonding experience than being coupled together by the Cupid and then being murdered by a pair of Mafia. Oh, joy. If this sounds like something you're interested, come join us for a night of games and snacks and a whole lot of fun. (We promise, there's more than just mafia here. We have all of ARC's shelves to borrow from, don't worry)."
-}, {
-    day: "22",
-    month: "APR",
-    time: "6-8pm, Wednesday Week 9",
-    room: "TBD",
-    eventName: "Script Block",
-    desc: "Script block is open to all! It doesn't matter if you've never held a pen in your life, as long as you come with passion and verve. We bring snacks, write skits, and generally make all sorts of things up. Script block is not for the faint of heart, but never fear, there's no judgement here. You could be a poet when you don't even know it, and you might even end up writing a sketch for our 2026 show!"
-}, {
-    day: "24",
-    month: "APR",
-    time: "6-9pm, Friday Week 10",
-    room: "TBD",
-    eventName: "Movie Night",
-    desc: "The last day of a stressful trimester calls for a numbingly relaxing movie night. The movie is still to be determined, but never fear, for we will come prepared with copious snacks and plenty of tissues for those with anxious, sensitive hearts. Come on a journey with us, and forget about exams for just one night."
-},
+}, 
+// {
+//     day: "20",
+//     month: "MAR",
+//     time: "6-8pm, Friday Week 5",
+//     room: "Colombo Theatre B",
+//     eventName: "Nostalgia Night",
+//     desc: "As we near the end of the first half of this trimester, what better way to relax than to play some beloved childhood games? We don't have a Purble Place license anymore, unfortunately, but join us for a night of musical chairs, pin the tail on the donkey, and all these games you played when you were six years old and have never really matured out of."
+// }, {
+//     day: "01",
+//     month: "APR",
+//     time: "6-8pm, Wednesday Week 7",
+//     room: "NS Global Webster 127",
+//     eventName: "Acting Block",
+//     desc: "It doesn't matter if you've never even stepped foot on a stage before. Now is the perfect time for you - yes, you - to have some low-stakes fun with our acting block! We'll run various acting and improv games, and it's guaranteed to be a hell of a fun night, so come right along!"
+// }, {
+//     day: "03",
+//     month: "APR",
+//     time: "6-9pm, Friday Week 7",
+//     room: "Colombo Theatre B",
+//     eventName: "Trivia Night",
+//     desc: "As a bunch of self-professed theatre nerds, you can guarantee that we know a bunch of useless facts. But do you dare to put your own knowledge to the test? There's only one way to find out - join us for a night of trivia. There'll be snacks, a whole bunch of fun, a place for you to show off, and even some juicy prizes for the winners."
+// }, {
+//     day: "08",
+//     month: "APR",
+//     time: "6-8pm, Wednesday Week 8",
+//     room: "NS Global Webster 127",
+//     eventName: "Script Block",
+//     desc: "Script block is open to all! It doesn't matter if you've never held a pen in your life, as long as you come with passion and verve. We bring snacks, write skits, and generally make all sorts of things up. Script block is not for the faint of heart, but never fear, there's no judgement here. You could be a poet when you don't even know it, and you might even end up writing a sketch for our 2026 show!"
+// }, {
+//     day: "10",
+//     month: "APR",
+//     time: "6-8pm, Friday Week 8",
+//     room: "TBD",
+//     eventName: "Karaoke",
+//     desc: "If you came to our first karaoke and are wondering why there's another one, well, this is a theatre society. And who doesn't love karaoke? Come join us for even more show tunes, pop songs, and unskippable Youtube ads!"
+// }, {
+//     day: "15",
+//     month: "APR",
+//     time: "6-8pm, Wednesday Week 9",
+//     room: "NS Global Webster 127",
+//     eventName: "Script Block",
+//     desc: "Script block is open to all! It doesn't matter if you've never held a pen in your life, as long as you come with passion and verve. We bring snacks, write skits, and generally make all sorts of things up. Script block is not for the faint of heart, but never fear, there's no judgement here. You could be a poet when you don't even know it, and you might even end up writing a sketch for our 2026 show!"
+// }, {
+//     day: "17",
+//     month: "APR",
+//     time: "6-8pm, Friday Week 9",
+//     room: "NS Global Webster 127",
+//     eventName: "Board Games",
+//     desc: "Board game night is the perfect opportunity to meet new people and make new friends, for there is truly no better bonding experience than being coupled together by the Cupid and then being murdered by a pair of Mafia. Oh, joy. If this sounds like something you're interested, come join us for a night of games and snacks and a whole lot of fun. (We promise, there's more than just mafia here. We have all of ARC's shelves to borrow from, don't worry)."
+// }, {
+//     day: "22",
+//     month: "NS Global Webster 127",
+//     time: "6-8pm, Wednesday Week 9",
+//     room: "TBD",
+//     eventName: "Script Block",
+//     desc: "Script block is open to all! It doesn't matter if you've never held a pen in your life, as long as you come with passion and verve. We bring snacks, write skits, and generally make all sorts of things up. Script block is not for the faint of heart, but never fear, there's no judgement here. You could be a poet when you don't even know it, and you might even end up writing a sketch for our 2026 show!"
+// }, {
+//     day: "24",
+//     month: "APR",
+//     time: "6-9pm, Friday Week 10",
+//     room: "NS Global Webster 127",
+//     eventName: "Movie Night",
+//     desc: "The last day of a stressful trimester calls for a numbingly relaxing movie night. The movie is still to be determined, but never fear, for we will come prepared with copious snacks and plenty of tissues for those with anxious, sensitive hearts. Come on a journey with us, and forget about exams for just one night."
+// },
 ]
