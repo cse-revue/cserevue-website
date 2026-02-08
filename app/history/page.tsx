@@ -70,9 +70,8 @@ export default function History() {
       <Navbar />
       <Header
         title="See Our Past Shows"
-        image="/images/teams/hospitality.37e9f532.jpg"
+        image="/images/photossss/landscape show.jpg"
       />
-      <br/>
       <div className="text-lg font-paragraph text-center bg-black text-white p-5">
         Curious about our previous shows?
         <br/>

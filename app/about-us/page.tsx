@@ -48,8 +48,10 @@ const About: React.FC = () => {
       <div className="flex w-full bg-white text-black justify-center">
         <p className="text-black font-paragraph max-w-190 text-center my-20 mx-10 leading-8 text-xl">
           <span className="text-pink text-4xl font-rowdies">CSE REVUE </span>
-          is a group of people and we do theatre and i cannot fluff for this long so lorem ipsum yeahhhhhh potatoes tomatoes egg and soup let us go then you and i.
-I think this blurb is meant to be longer than the other blurb so uh in the room the women come and go talking of michaelangelo do i dare disturb the universe do i dare to eat a peach i shall wear the bottoms of my trousers rolled
+          is a live comedy sketch show held during October at UNSW. Fully produced and directed by members of the society, the show serves to highlight the technical and creative talents of UNSW students, as well as an opportunity for students to further develop their university experience.
+
+          {/* is a group of people and we do theatre and i cannot fluff for this long so lorem ipsum yeahhhhhh potatoes tomatoes egg and soup let us go then you and i.
+I think this blurb is meant to be longer than the other blurb so uh in the room the women come and go talking of michaelangelo do i dare disturb the universe do i dare to eat a peach i shall wear the bottoms of my trousers rolled */}
         </p>
       </div>
 
@@ -60,20 +62,22 @@ I think this blurb is meant to be longer than the other blurb so uh in the room 
             PAST SHOWS
           </p>
           {/** both past shows */}
-          <div className="grid md:grid-cols-2 grid-cols-1 gap-15 xl:px-20 px-10 py-8 font-paragraph">
+          <div className="grid md:grid-cols-2 grid-cols-1 gap-20 xl:px-20 px-10 py-8 font-paragraph ">
             {/**2025 show */}
             <div className="w-full overflow-hidden"> 
               <img
-                src="/images/teams/cast.b91cf1d8.jpg"
+                src="/images/prev-shows/2025 Scriptbob squarebrackets cropped.png"
+                className="object-cover"
               />
               <p className="text-center text-lg py-6">
                 2025: ScriptBoB SquareBrackets
               </p>
             </div>
             {/**2024 show */}
-            <div className="w-full overflow-hidden">
+            <div className="w-full overflow-hidden align-bottom">
               <img
-                src="/images/teams/cast.b91cf1d8.jpg"
+                src="/images/prev-shows/2024 Mean gurls youtube thumbnail.jpg"
+                className="object-cover"
               />
               <p className="text-center text-lg py-6">
                 2024: Mean GURLs
@@ -106,39 +110,39 @@ I think this blurb is meant to be longer than the other blurb so uh in the room 
 const execTeam: Member[] = [
   {
     name: "Jade Williams",
-    photo: "/images/teams/choreos.5b919d8d.jpg",
+    photo: "/images/headshots/Jade.jpg",
     position: "Director"
   }, {
     name: "Brett Viado",
-    photo: "/images/teams/choreos.5b919d8d.jpg",
+    photo: "/images/headshots/Brett.PNG",
     position: "Director"
   }, {
     name: "Chelcy Meneses", 
-    photo: "/images/teams/choreos.5b919d8d.jpg",
+    photo: "/images/headshots/Chelcy.jpg",
     position: "Director"
   }, {
     name: "Elaine Huang",
-    photo: "/images/teams/choreos.5b919d8d.jpg",
+    photo: "/images/headshots/Elaine.jpg",
     position: "Producer & President"
   }, {
     name: "Jolan Guo",
-    photo: "/images/teams/choreos.5b919d8d.jpg",
+    photo: "/images/headshots/Jolan.jpg",
     position: "Producer"
   }, {
     name: "Jasmine Ho",
-    photo: "/images/teams/choreos.5b919d8d.jpg",
+    photo: "/images/headshots/Jasmine.JPG",
     position: "Producer",
   }, {
     name: "Sarah Romanous",
-    photo: "/images/teams/choreos.5b919d8d.jpg",
+    photo: "/images/headshots/Sarah.jpg",
     position: "Secretary"
   }, {
     name: "Arte Collins",
-    photo: "/images/teams/choreos.5b919d8d.jpg",
+    photo: "/images/headshots/Arte.jpg",
     position: "Arc Delegate & Welfare Officer"
   }, {
-    name: "Samuel Vaynman",
-    photo: "/images/teams/choreos.5b919d8d.jpg",
+    name: "Sam Vaynman",
+    photo: "/images/headshots/Sam.jpg",
     position: "Treasurer"
   }
 ]

@@ -94,6 +94,24 @@ const FAQs: FaqInfo[] = [
     answer: "There is an audition process, but everyone who signs up and auditions will have a role in the production."
   }
 ]
+// const FAQs: FaqInfo[] = [
+//   {
+//     question: "how many ribs does a human have?",
+//     answer: "well, actually, many people think it’s 12. this is false. the real number is i don’t know man what."
+//   }, {
+//     question: "how much wood could a woodchuck chuck?",
+//     answer: "WOOD WOOD WOOD"
+//   }, {
+//     question: "what is the capital of new zealand?",
+//     answer: "idk sydney??"
+//   }, {
+//     question: "to be or not to be?",
+//     answer: "not to be. always not to be."
+//   }, {
+//     question: "what colour does piano taste like?",
+//     answer: "A RAINBOW!!"
+//   }
+// ]
 
 // potential questions: 
 // what is the commitment
