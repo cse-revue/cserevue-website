@@ -72,10 +72,10 @@ I think this blurb is meant to be longer than the other blurb so uh in the room 
               </p>
             </div>
             {/**2024 show */}
-            <div className="w-full overflow-hidden">
+            <div className="w-full overflow-hidden align-bottom">
               <img
-                src="/images/prev-shows/2024 Mean gurls.png"
-                className="object-cover my-12"
+                src="/images/prev-shows/2024 Mean gurls youtube thumbnail.jpg"
+                className="object-cover"
               />
               <p className="text-center text-lg py-6">
                 2024: Mean GURLs
