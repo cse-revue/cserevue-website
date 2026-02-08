@@ -111,7 +111,7 @@ export default function Home() {
           <h1 className="text-pink font-rowdies text-3xl text-center mt-6 pt-4">WHAT IS CSE REVUE?</h1>
           <div className="relative px:2 xl:mx-60 my-8 flex">
             <img 
-              src="/images/teams/cast.b91cf1d8.jpg"
+              src="/images/photossss/IMG_0126.jpg"
               alt=""
               className="absolute right-4 object-cover size-60 lg:h-60 w-3/5 aspect-fixed"
             ></img>

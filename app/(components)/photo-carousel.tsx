@@ -40,6 +40,7 @@ const gallery: string[] = [
   "/images/teams/foh.c419396c.jpg",
   "/images/teams/fundraising.772ec2cf.jpg",
   "/images/teams/promos.8c968f75.jpg",
+  "/images/teams/vos.a79b38d0.jpg",
   "/images/photossss/IMG_0126.jpg",
   "/images/photossss/IMG_4181.jpg",
   "/images/photossss/2024-25 exec.JPEG",
@@ -73,4 +74,5 @@ const gallery: string[] = [
   "/images/photossss/IMG_3689.JPG",
   "/images/photossss/IMG_3740.JPG",
   "/images/photossss/IMG_3744.JPG",
+  "/images/photossss/landscape show.jpg",
 ]

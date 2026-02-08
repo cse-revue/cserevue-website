@@ -22,7 +22,7 @@ const TeamCard: React.FC<{team: TeamTileInfo}> = ({team}) => {
         {team.hover == true ? (
           <img
             src={team.image}
-            className="object-cover opacity-100 group-hover:opacity-80 group-hover:brightness-50"
+            className="object-cover h-full w-full opacity-90 group-hover:opacity-80 group-hover:brightness-50"
           >
           </img>
         ): (
@@ -37,7 +37,7 @@ const TeamCard: React.FC<{team: TeamTileInfo}> = ({team}) => {
         {/**trying to make the hover work GOTTA SEPARATE THE HIDDEN FOR THE TWO TEXTS IDKKKKK */}
         {team.hover == true ? (
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center group">
-            <h1 className="text-5xl text-white font-rowdies group-hover:hidden">{team.teamName}</h1>
+            <h1 className="text-5xl text-white font-rowdies group-hover:hidden underline">{team.teamName}</h1>
             <p className="text-xs lg:text-sm m-5 font-paragraph text-white hidden group-hover:block">{team.desc}</p>
           </div>
           // <div>
@@ -107,77 +107,77 @@ const Teams = () => {
 const teams: TeamTileInfo[] = [
   {
     teamName: "Cast", 
-    image: "/images/teams/choreos.5b919d8d.jpg",
+    image: "/images/photossss/IMG_2008.JPG",
     desc: castDesc,
     hover: true
   }, {
     teamName: "Tech",
-    image: "/images/teams/choreos.5b919d8d.jpg",
+    image: "/images/photossss/landscape show cropped.jpg",
     desc: techDesc,
     hover: true
   }, {
-    image: "/images/teams/choreos.5b919d8d.jpg",
+    image: "/images/teams/vos.a79b38d0.jpg",
     hover: false
   }, {
-    image: "/images/teams/choreos.5b919d8d.jpg",
+    image: "/images/photossss/IMG_0990.JPG",
     hover: false
   },
   {
     teamName: "Band",
-    image: "/images/teams/choreos.5b919d8d.jpg",
+    image: "/images/teams/band.012ea31f.jpg",
     desc: bandDesc,
     hover: true
   }, {
     teamName: "Scripts",
-    image: "/images/teams/choreos.5b919d8d.jpg",
+    image: "/images/teams/scripts.c446ae2c.jpg",
     desc: scriptsDesc,
     hover: true
   }, {
     teamName: "Design",
-    image: "/images/teams/choreos.5b919d8d.jpg",
+    image: "/images/photossss/2024-25 exec.JPEG",
     desc: designDesc,
     hover: true
   }, {
-    image: "/images/teams/choreos.5b919d8d.jpg",
+    image: "/images/photossss/IMG_2616.JPG",
     hover: false
   }, {
-    image: "/images/teams/choreos.5b919d8d.jpg",
+    image: "/images/photossss/IMG_3070.JPG",
     hover: false
   }, {
     teamName: "Marketing",
-    image: "/images/teams/choreos.5b919d8d.jpg",
+    image: "/images/photossss/IMG_1114.JPG",
     desc: markDesc,
     hover: true
   }, {
     teamName: "Events",
-    image: "/images/teams/choreos.5b919d8d.jpg",
+    image: "/images/teams/socials.84d936cd.jpg",
     desc: eventsDesc,
     hover: true
   }, {
     image: "/images/teams/choreos.5b919d8d.jpg",
     hover: false
   }, {
-    image: "/images/teams/choreos.5b919d8d.jpg",
+    image: "/images/photossss/IMG_3675.JPG",
     hover: false
   }, {
-    image: "/images/teams/choreos.5b919d8d.jpg",
+    image: "/images/photossss/IMG_2134.JPG",
     hover: false
   }, {
     teamName: "Front of House",
-    image: "/images/teams/choreos.5b919d8d.jpg",
+    image: "/images/teams/foh.c419396c.jpg",
     desc: fohDesc,
     hover: true
   }, {
-    image: "/images/teams/choreos.5b919d8d.jpg",
+    image: "/images/photossss/IMG_3449.JPG",
     hover: false
   }, {
     teamName: "Videos & Photography",
-    image: "/images/teams/choreos.5b919d8d.jpg",
+    image: "/images/teams/videos.105e88bb.png",
     desc: videosDesc,
     hover: true
   }, {
     teamName: "Hospitality",
-    image: "/images/teams/choreos.5b919d8d.jpg",
+    image: "/images/teams/fundraising.772ec2cf.jpg",
     desc: hospoDesc,
     hover: true
   }
