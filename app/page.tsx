@@ -29,10 +29,7 @@
 import React, { useEffect, useState } from "react";
 import { Navbar } from "./(components)/navbar";
 import { Footer } from "./(components)/footer";
-import Header from "./(components)/header";
 import { motion } from "framer-motion";
-import image from "next/image";
-import { title } from "process";
 import { EventDetails } from "./events/page";
 import Link from "next/link";
 import CarouselOptions from "./(components)/photo-carousel";

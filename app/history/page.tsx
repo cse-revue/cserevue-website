@@ -5,7 +5,6 @@ import { Navbar } from ".././(components)/navbar";
 import Header from "../(components)/header";
 import { Footer } from "../(components)/footer";
 import Link from "next/link";
-import { Shadows_Into_Light_Two } from "next/font/google";
 
 interface ShowInfo {
   name: string,

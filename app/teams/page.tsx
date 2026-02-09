@@ -5,7 +5,6 @@ import { Navbar } from ".././(components)/navbar";
 import Header from ".././(components)/header"
 import { Footer } from "../(components)/footer";
 import { bandDesc, castDesc, designDesc, eventsDesc, fohDesc, hospoDesc, markDesc, scriptsDesc, techDesc, videosDesc } from "./descriptions";
-import { mark } from "framer-motion/client";
 
 interface TeamTileInfo {
   teamName?: string,
@@ -40,35 +39,10 @@ const TeamCard: React.FC<{team: TeamTileInfo}> = ({team}) => {
             <h1 className="text-5xl text-white font-rowdies group-hover:hidden underline">{team.teamName}</h1>
             <p className="text-xs lg:text-sm m-5 font-paragraph text-white hidden group-hover:block">{team.desc}</p>
           </div>
-          // <div>
-
-          // </div>
         ):(
           <div></div>
         )}
-        {/* {team.hover == true ? (
-          <div className="absolute inset-0 flex items-center justify-center text-center hover:opacity-100">
-            <p className="text-md font-paragraph text-white hidden">{team.desc}</p>
-          </div>
-        ):(
-          <div></div>
-        )} */}
-        {/* {team.hover == true ? (
-          <div className="absolute inset-0 flex flex-col items-center justify-center text-center ">
-            <h1 className="text-5xl text-white font-rowdies">{team.teamName}</h1>
-          </div>
-        ): (
-          <div></div>
-        )} */}
-
       </div>
-      {/* {team.hover == true ? (
-        <div className="text-center">
-          {team.desc}
-        </div>
-      ): (
-        <div></div>
-      )} */}
     </div>
     
   )
@@ -101,7 +75,6 @@ const Teams = () => {
     </div>
 
   )
-  // want to be able to have a more-> for each to give a more detailed description
 }
 
 const teams: TeamTileInfo[] = [

@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import { Navbar } from ".././(components)/navbar";
 import Header from ".././(components)/header"
 import { Footer } from "../(components)/footer";
-import { Card, CardContent } from "@/components/ui/card";
 import Link from "next/link";
 import Image from "next/image";
 
