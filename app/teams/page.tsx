@@ -80,7 +80,7 @@ const Teams = () => {
 const teams: TeamTileInfo[] = [
   {
     teamName: "Cast", 
-    image: "/images/photossss/IMG_2008.JPG",
+    image: "/images/photossss/IMG_2008.webp",
     desc: castDesc,
     hover: true
   }, {
@@ -111,14 +111,14 @@ const teams: TeamTileInfo[] = [
     desc: designDesc,
     hover: true
   }, {
-    image: "/images/photossss/IMG_2616.JPG",
+    image: "/images/photossss/IMG_2616_compressed.webp",
     hover: false
   }, {
-    image: "/images/photossss/IMG_3070.JPG",
+    image: "/images/photossss/IMG_3070_compressed.webp",
     hover: false
   }, {
     teamName: "Marketing",
-    image: "/images/photossss/IMG_1114.JPG",
+    image: "/images/photossss/IMG_1114_compressed.webp",
     desc: markDesc,
     hover: true
   }, {
@@ -141,7 +141,7 @@ const teams: TeamTileInfo[] = [
     desc: fohDesc,
     hover: true
   }, {
-    image: "/images/photossss/IMG_3449.JPG",
+    image: "/images/photossss/IMG_3449_compressed.webp",
     hover: false
   }, {
     teamName: "Videos & Photography",
