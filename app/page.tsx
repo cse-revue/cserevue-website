@@ -61,7 +61,7 @@ const EventGrid: React.FC<{event: EventDetails, index: number, maxEvents: number
           <p className="text-white font-rowdies text-xl">{event.month}</p>
         </div>
         <div className={`flex flex-col basis-3/4 text-black md:justify-center text-lg`}>
-          <Link href={link} className="font-rowdies text-xl hover:underline pb-1">{event.eventName}</Link>
+          <Link href={link} prefetch={false} className="font-rowdies text-xl hover:underline pb-1">{event.eventName}</Link>
           <p className="font-paragraph">
             <span className="font-bold">time: </span> {event.time}
           </p>
@@ -133,7 +133,7 @@ export default function Home() {
           <div className="basis-4xs text-sm md:text-2xl font-rowdies">bringing shows to life since 2002</div>
           <div className="basis-xs text-sm md:text-2xl font-rowdies mb-4">500+ members</div>
           <div className="bg-white flex flex-row items-center p-3 md:p-5 w-50 md:w-85 md:text-3xl lg:ml-auto">
-            <Link href="/about-us" className="text-cyan font-rowdies hover:underline lg:ml-5 w-2/3">{`READ MORE`}</Link>
+            <Link prefetch={false} href="/about-us" className="text-cyan font-rowdies hover:underline lg:ml-5 w-2/3">{`READ MORE`}</Link>
             <img src="/images/other-resources/arrow.png" className="size-8 md:size-8 mx-3"></img>
           </div>
         </div>
@@ -145,7 +145,7 @@ export default function Home() {
               <EventGrid key={index} event={event} index={index} maxEvents={4}/>
             ))}
           </div>
-          <Link href="/events#comingup" scroll={true} className="text-orange text-xl font-rowdies hover:underline">view all events →</Link>
+          <Link prefetch={false} href="/events#comingup" scroll={true} className="text-orange text-xl font-rowdies hover:underline">view all events →</Link>
         </div>
 
         {/** gallery of photos*/}

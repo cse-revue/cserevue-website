@@ -41,6 +41,7 @@ const PrevShow: React.FC<{show: ShowInfo, index: number}> = ({show, index}) => {
             <div className="flex flex-col flex-1">
               <Link
                 href={show.vidLink}
+                prefetch={false}
                 className={`font-bold ${index%2 === 0 ? "text-cyan": "text-purple"} text-md font-normal underline hover:italic`}
               >
                 {show.name}
@@ -77,6 +78,7 @@ export default function History() {
         Find the full playlist {"\x20"}
         <span className="text-pink font-bold hover:underline">
           <Link
+            prefetch={false}
             href="https://www.youtube.com/playlist?list=PLTwUb6NYssa2rpZs0uf8vD8fIOHscDtE_"
           >here</Link>  
           

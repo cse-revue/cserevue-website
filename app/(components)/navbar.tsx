@@ -47,7 +47,7 @@ export const Navbar = () => {
         {/* Mobile Logo */}
         
         <div className="md:hidden flex items-center z-[100]">
-          <Link href="/" onClick={() => setIsOpen(false)}>
+          <Link href="/" onClick={() => setIsOpen(false)} prefetch={false}>
             <Image
                 src="/images/logos/logo-white-transparent.c73fcbb6.png"
                 alt="CSERevue Logo"
@@ -70,12 +70,12 @@ export const Navbar = () => {
                 className = "h-17 w-auto" 
             />
             </Link>
-            <Link href="/about-us" className="hover:text-cyan text-center">About Us</Link>
-            <Link href="/events" className="hover:text-cyan text-center">Events</Link>
-            <Link href= "/teams" className="hover:text-cyan text-center">Teams</Link>
-            <Link href="/contact-us" className="hover:text-cyan text-center">Contact Us</Link>
-            <Link href="/sponsors" className="hover:text-cyan text-center">Sponsors</Link>
-            <Link href="/history" className="hover:text-cyan flex flex-row text-center">History</Link>
+            <Link href="/about-us" className="hover:text-cyan text-center" prefetch={false}>About Us</Link>
+            <Link href="/events" className="hover:text-cyan text-center" prefetch={false}>Events</Link>
+            <Link href= "/teams" className="hover:text-cyan text-center" prefetch={false}>Teams</Link>
+            <Link href="/contact-us" className="hover:text-cyan text-center" prefetch={false}>Contact Us</Link>
+            <Link href="/sponsors" className="hover:text-cyan text-center" prefetch={false}>Sponsors</Link>
+            <Link href="/history" className="hover:text-cyan flex flex-row text-center" prefetch={false}>History</Link>
           </div>
         </div>
 

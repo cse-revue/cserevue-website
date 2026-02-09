@@ -48,7 +48,7 @@ const EventRows: React.FC<{event: EventDetails, index: number, maxEvents: number
           </p>
         </div>
         <div className="basis-3/4 text-black flex flex-col justify-center">
-          <Link href={link} className="font-rowdies text-xl hover:underline pb-1">{event.eventName}</Link>
+          <Link href={link} prefetch={false} className="font-rowdies text-xl hover:underline pb-1">{event.eventName}</Link>
           <p className="font-paragraph">{event.desc}</p>
         </div>
         <div className={`flex flex-col md:basis-3/10 basis-1/5 text-purple justify-center`}>
@@ -106,6 +106,7 @@ const Events: React.FC = () => {
         </div>
         <Link
           href="https://discord.gg/AvQjqjmmQR"
+          prefetch={false}
           className=" hover:underline md:px-20 px-10 text-xl text-orange font-rowdies list-none p-0 m-0 indent-0"
         >Keep up to date on Discord! →</Link>
       </div>

@@ -83,7 +83,7 @@ I think this blurb is meant to be longer than the other blurb so uh in the room 
               </p>
             </div>
           </div>
-          <Link href="/history" className="xl:px-20 px-10 text-orange text-xl font-rowdies hover:underline"> view full history →</Link>
+          <Link href="/history" prefetch={false} className="xl:px-20 px-10 text-orange text-xl font-rowdies hover:underline"> view full history →</Link>
         </div>
       </div>
 
