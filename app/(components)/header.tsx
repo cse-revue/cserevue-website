@@ -21,6 +21,7 @@ const Header: React.FC<HeaderInfo> = ({title, image, subheading}) => {
             alt={title + " image"}
             fill
             className="object-center object-cover opacity-50 brightness-70"
+            priority
           />
         ): (
           <div className='w-full h-full'></div>
