@@ -21,7 +21,7 @@ const TeamCard: React.FC<{team: TeamTileInfo}> = ({team}) => {
         {team.hover == true ? (
           <img
             src={team.image}
-            className="object-cover h-full w-full opacity-90 group-hover:opacity-80 group-hover:brightness-50"
+            className="object-cover h-full w-full opacity-90 group-hover:opacity-80 group-hover:brightness-50 group-focus:opacity-80 group-focus:brightness-50"
           >
           </img>
         ): (
@@ -33,11 +33,10 @@ const TeamCard: React.FC<{team: TeamTileInfo}> = ({team}) => {
         )}
         
         {/**optional stuff for teams */}
-        {/**trying to make the hover work GOTTA SEPARATE THE HIDDEN FOR THE TWO TEXTS IDKKKKK */}
         {team.hover == true ? (
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center group">
-            <h1 className="text-5xl text-white font-rowdies group-hover:hidden underline">{team.teamName}</h1>
-            <p className="text-xs lg:text-sm m-5 font-paragraph text-white hidden group-hover:block">{team.desc}</p>
+            <h1 className="text-5xl text-white font-rowdies group-hover:hidden underline group-focus:hidden">{team.teamName}</h1>
+            <p className="text-xs lg:text-sm m-5 font-paragraph text-white hidden group-hover:block group-focus:block">{team.desc}</p>
           </div>
         ):(
           <div></div>

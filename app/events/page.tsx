@@ -86,8 +86,8 @@ const Events: React.FC = () => {
       <div className="bg-black items-center py-20 px-10 md:px-20 xl:px-60">
         <div className=" text-center">
           <div className="gap-4 flex flex-row justify-center">
-            {digits.map((digit) => (
-              <CountdownTile key={digit} digit={digit}/>
+            {digits.map((digit, index) => (
+              <CountdownTile key={index} digit={digit}/>
             ))}
           </div>
         </div>
